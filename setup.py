@@ -9,11 +9,17 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 requires = [
     'pyramid',
     'SQLAlchemy',
+    'GeoAlchemy2',
+    'psycopg2',
+    'dogpile.cache',    # cache regions, lets you cache the result of queries
+    'shapely',          # PostGIS-ish operations in python
     'transaction',
     'pyramid_tm',
     'pyramid_debugtoolbar',
     'zope.sqlalchemy',
+    'requests',
     'waitress',
+    'pyramid_xmlrpc',
     ]
 
 setup(name='thesis',
