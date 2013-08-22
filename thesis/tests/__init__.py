@@ -3,18 +3,18 @@ import transaction
 
 from pyramid import testing
 
-from .models import DBSession
+from thesis.models import DBSession
 
 
 class TestMyView(unittest.TestCase):
     def setUp(self):
         self.config = testing.setUp()
         from sqlalchemy import create_engine
-        engine = create_engine('sqlite://')
-        from .models import (
+        from thesis.models import (
             Base,
             MyModel,
             )
+        engine = create_engine('postgresql+psycopg2://thesis_db_user:_89_hHh_989g2988h08g2As@127.0.0.1:5432/thesis_test_db')
         DBSession.configure(bind=engine)
         Base.metadata.create_all(engine)
         with transaction.manager:

@@ -49,3 +49,41 @@ buildout:
       - cmd: bootstrap
     - require:
       - cmd: Add PostgreSQL to PATH
+
+thesis_db_user:
+  postgres_user.present:
+    - runas: postgres
+    - password: _89_hHh_989g2988h08g2As
+    - require:
+      - pkg: Install PostGIS Packages
+      - service: PostgreSQL Service
+
+thesis_test_db:
+  postgres_database.present:
+    - runas: postgres
+    - owner: thesis_db_user
+    - require:
+      - postgres_user: thesis_db_user
+
+psql -d thesis_test_db -c "CREATE EXTENSION postgis;":
+  cmd.wait:
+    - user: postgres
+    - watch:
+      - pkg: Install PostGIS Packages
+    - require:
+      - postgres_database: thesis_test_db
+
+thesis_dev_db:
+  postgres_database.present:
+    - runas: postgres
+    - owner: thesis_db_user
+    - require:
+      - postgres_user: thesis_db_user
+
+psql -d thesis_dev_db -c "CREATE EXTENSION postgis;":
+  cmd.wait:
+    - user: postgres
+    - watch:
+      - pkg: Install PostGIS Packages
+    - require:
+      - postgres_database: thesis_dev_db
