@@ -96,7 +96,7 @@ class TestMappableItem(unittest.TestCase):
         DBSession.configure(bind=engine)
 
         # Drop all the models
-        Base.metadata.drop_all(engine)
+        # Base.metadata.drop_all(engine)
 
     def test_search_layers_by_name(self):
         test_layer_1 = DBSession.query(Layer).\
@@ -113,3 +113,17 @@ class TestMappableItem(unittest.TestCase):
         test_emu_layer = DBSession.query(Layer).\
             filter_by(name='Emu').one()
         self.assertGreater(len(test_emu_layer.mappable_points), 10000)
+
+# SELECT ST_AsGeoJSON(location) from mappable_points WHERE location && ST_MakeEnvelope(-20,-20,20,20);
+
+# Each individual point as GeoJSON
+# SELECT ST_AsGeoJSON(location) from mappable_points;
+
+# GeoJSON of clusters snapped to grid within an envelope
+# SELECT ST_AsGeoJSON(ST_COLLECT(location)) from mappable_points WHERE location && ST_MakeEnvelope(-20,-20,20,20) GROUP BY ST_SNAPTOGRID(location, 1);
+
+# Centroid of clusters snapped to grid
+# SELECT ST_AsText(ST_Centroid(ST_COLLECT(location))) from mappable_points GROUP BY ST_SNAPTOGRID(location, 1);
+
+# All points as one collection as GeoJSON
+# SELECT ST_AsGeoJSON(ST_Collect(location)) from mappable_points;
