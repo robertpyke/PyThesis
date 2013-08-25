@@ -108,3 +108,8 @@ class TestMappableItem(unittest.TestCase):
             filter_by(name='TestLayer2').one()
         self.assertEqual(test_layer_2.name, 'TestLayer2')
         self.assertEqual(len(test_layer_2.mappable_points), 3)
+
+    def test_emu_fixure_loaded(self):
+        test_emu_layer = DBSession.query(Layer).\
+            filter_by(name='Emu').one()
+        self.assertGreater(len(test_emu_layer.mappable_points), 10000)
