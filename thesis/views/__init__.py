@@ -3,7 +3,7 @@ from pyramid.view import view_config
 
 from sqlalchemy.exc import DBAPIError
 
-from .models import (
+from thesis.models import (
     DBSession,
     MyModel,
     )
