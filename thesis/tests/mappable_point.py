@@ -114,7 +114,7 @@ class TestMappableItem(unittest.TestCase):
             filter_by(name='Emu').one()
         self.assertGreater(len(test_emu_layer.mappable_points), 5)
 
-    def test_emu_get_points_as_geo_json(self):
+    def test_get_layer_points_as_geo_json(self):
         q = MappablePoint.get_points_as_geojson().\
             join('layer').filter(Layer.name == 'TestLayer1')
         result = q.one()
@@ -125,7 +125,7 @@ class TestMappableItem(unittest.TestCase):
         result2 = q2.one()
         self.assertEqual(result2.locations, '{"type":"MultiPoint","coordinates":[[10,15],[10,15],[30,15]]}')
 
-    def test_emu_get_points_as_wkt(self):
+    def test_get_layer_points_as_wkt(self):
         q = MappablePoint.get_points_as_wkt().\
             join('layer').filter(Layer.name == 'TestLayer1')
         result = q.one()
