@@ -3,18 +3,10 @@ from pyramid.view import view_config
 
 from sqlalchemy.exc import DBAPIError
 
-from thesis.models import (
-    DBSession,
-    MyModel,
-    )
-
+from thesis.models import *
 
 @view_config(route_name='home', renderer='templates/mytemplate.pt')
 def my_view(request):
-    try:
-        one = DBSession.query(MyModel).filter(MyModel.name == 'one').first()
-    except DBAPIError:
-        return Response(conn_err_msg, content_type='text/plain', status_int=500)
     return {'one': one, 'project': 'thesis'}
 
 conn_err_msg = """\

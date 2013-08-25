@@ -5,12 +5,12 @@ from pyramid import testing
 
 from thesis.models import DBSession
 from sqlalchemy import create_engine
-        
+
 from thesis.models import (
     Base,
-    MyModel,
+    MappablePoint,
+    Layer
 )
-
 
 class TestMyView(unittest.TestCase):
 
@@ -22,8 +22,27 @@ class TestMyView(unittest.TestCase):
         Base.metadata.create_all(engine)
 
         with transaction.manager:
-            model = MyModel(name='one', value=55)
-            DBSession.add(model)
+            # Add Emu
+            emu_layer = Layer(name='Emu')
+
+            emu_layer.mappable_points = [
+                MappablePoint('Point(30 10)'),
+                MappablePoint('Point(20 10)'),
+            ]
+
+            DBSession.add(emu_layer)
+
+            # Add Kookaburra
+            kookaburra_layer = Layer(name='Kookaburra')
+
+            kookaburra_layer.mappable_points = [
+                MappablePoint('Point(10 15)'),
+                MappablePoint('Point(10 15)'),
+                MappablePoint('Point(30 15)'),
+            ]
+
+            DBSession.add(kookaburra_layer)
+
 
     def tearDown(self):
 
@@ -36,10 +55,13 @@ class TestMyView(unittest.TestCase):
         # Drop all the models
         Base.metadata.drop_all(engine)
 
-    def test_it(self):
+    def test_search_layers_by_name(self):
+        emu_layer = DBSession.query(Layer).\
+            filter_by(name='Emu').one()
+        self.assertEqual(emu_layer.name, 'Emu')
+        self.assertEqual(len(emu_layer.mappable_points), 2)
 
-        from thesis.views import my_view
-        request = testing.DummyRequest()
-        info = my_view(request)
-        self.assertEqual(info['one'].name, 'one')
-        self.assertEqual(info['project'], 'thesis')
+        kookaburra_layer = DBSession.query(Layer).\
+            filter_by(name='Kookaburra').one()
+        self.assertEqual(kookaburra_layer.name, 'Kookaburra')
+        self.assertEqual(len(kookaburra_layer.mappable_points), 3)
