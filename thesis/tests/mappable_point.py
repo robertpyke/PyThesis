@@ -96,7 +96,7 @@ class TestMappableItem(unittest.TestCase):
         DBSession.configure(bind=engine)
 
         # Drop all the models
-        # Base.metadata.drop_all(engine)
+        Base.metadata.drop_all(engine)
 
     def test_search_layers_by_name(self):
         test_layer_1 = DBSession.query(Layer).\
@@ -112,7 +112,24 @@ class TestMappableItem(unittest.TestCase):
     def test_emu_fixure_loaded(self):
         test_emu_layer = DBSession.query(Layer).\
             filter_by(name='Emu').one()
-        self.assertGreater(len(test_emu_layer.mappable_points), 10000)
+        self.assertGreater(len(test_emu_layer.mappable_points), 5)
+
+    def test_emu_get_points_as_geo_json(self):
+        q = MappablePoint.get_points_as_geojson().\
+            join('layer').filter(Layer.name == 'TestLayer1')
+        result = q.one()
+        self.assertEqual(result.locations, '{"type":"MultiPoint","coordinates":[[30,10],[20,10]]}')
+
+        q2 = MappablePoint.get_points_as_geojson().\
+            join('layer').filter(Layer.name == 'TestLayer2')
+        result2 = q2.one()
+        self.assertEqual(result2.locations, '{"type":"MultiPoint","coordinates":[[10,15],[10,15],[30,15]]}')
+
+    def test_emu_get_points_as_wkt(self):
+        q = MappablePoint.get_points_as_wkt().\
+            join('layer').filter(Layer.name == 'TestLayer1')
+        result = q.one()
+        self.assertEqual(result.locations, 'MULTIPOINT(30 10,20 10)')
 
 # SELECT ST_AsGeoJSON(location) from mappable_points WHERE location && ST_MakeEnvelope(-20,-20,20,20);
 

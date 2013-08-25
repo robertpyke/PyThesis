@@ -8,6 +8,8 @@ from sqlalchemy import (
     ForeignKey,
     )
 
+from sqlalchemy.sql import expression
+
 from sqlalchemy.ext.declarative import declarative_base
 
 from sqlalchemy.orm import (
@@ -18,6 +20,16 @@ from sqlalchemy.orm import (
     )
 
 from geoalchemy2 import *
+from geoalchemy2.functions import GenericFunction
+import geoalchemy2.functions as func
+
+
+class ST_Collect(GenericFunction):
+    """
+    Return type: :class:`geoalchemy2.types.Geometry`.
+    """
+    name = 'ST_Collect'
+    type = types.Geometry
 
 class MappablePoint(Base):
     __tablename__ = 'mappable_points'
@@ -36,3 +48,34 @@ class MappablePoint(Base):
                 * projection : The EPSG projection as an integer
         """
         self.location = WKTElement(location_wkt, srid=projection)
+
+
+# SELECT ST_AsGeoJSON(ST_Collect(location)) from mappable_points;
+
+    @classmethod
+    def pre_process(class_):
+        pass
+
+    @classmethod
+    def get_points_as_geojson(class_):
+        MappablePoint = class_
+
+        q = DBSession.query(
+            func.ST_AsGeoJSON(
+                ST_Collect(MappablePoint.location)
+            ).label("locations")
+        )
+
+        return q
+
+    @classmethod
+    def get_points_as_wkt(class_):
+        MappablePoint = class_
+
+        q = DBSession.query(
+            func.ST_AsText(
+                ST_Collect(MappablePoint.location)
+            ).label("locations")
+        )
+
+        return q

@@ -34,10 +34,12 @@ class Layer(Base):
         """
         self.name = name
 
+    @classmethod
     def by_name(class_):
         """ Sort the Layers by name
         """
         Layer = class_
-        q = Session.query(Layer)
+        q = DBSession.query(Layer)
         q = q.order_by(Layer.name)
         return q
+
