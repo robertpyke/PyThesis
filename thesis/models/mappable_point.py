@@ -37,7 +37,7 @@ class MappablePoint(Base):
 
     # The mappable point MUST be associated with a layer
     layer_id = Column(Integer, ForeignKey("layers.id"), nullable=False)
-    layer = relationship("Layer", backref=backref("mappable_points", order_by=id))
+    layer = relationship("Layer", backref=backref("mappable_points", order_by=id, enable_typechecks=False))
     location = Column(Geometry(geometry_type='POINT', srid=DEFAULT_PROJECTION))
 
     def __init__(self, location_wkt, projection=DEFAULT_PROJECTION):
@@ -49,8 +49,6 @@ class MappablePoint(Base):
         """
         self.location = WKTElement(location_wkt, srid=projection)
 
-
-# SELECT ST_AsGeoJSON(ST_Collect(location)) from mappable_points;
 
     @classmethod
     def pre_process(class_):
