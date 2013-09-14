@@ -41,7 +41,7 @@ class GriddedMappablePoint(MappablePoint):
     """
     MIN_GRID_SIZE_BEFORE_NO_CLUSTERING = 0.015
 
-    """ The possible grid sizes that should be used (the normalised grid sizes)"""
+    """ The possible grid sizes that should be used (the normalised grid sizes) """
     GRID_SIZES = [0, MIN_GRID_SIZE_BEFORE_NO_CLUSTERING, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8]
 
     @classmethod
@@ -61,7 +61,6 @@ class GriddedMappablePoint(MappablePoint):
 
         # This will be the last grid size we found that we were larger than (or equal to).
         return return_grid_size
-
 
     @classmethod
     def pre_process(class_):

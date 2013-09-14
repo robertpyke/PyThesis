@@ -1,6 +1,9 @@
+import logging
+
 from thesis.models import DBSession, Base, Layer, DEFAULT_PROJECTION
 
 from thesis.models.mappable_point import *
+from thesis.models.gridded_mappable_point import *
 
 from sqlalchemy import (
     Column,
@@ -42,11 +45,51 @@ class ST_MakeEnvelope(GenericFunction):
     name = 'ST_MakeEnvelope'
     type = None
 
-class GriddedAndBoundMappablePoint(MappablePoint):
+class GriddedAndBoundMappablePoint(GriddedMappablePoint):
+
+    """ The grid size is the span of the window divided by GRID_SIZE_WINDOW_FRACTION
+        The total number of grids will, on average, be GRID_SIZE_WINDOW_FRACTION^2
+    """
+    GRID_SIZE_WINDOW_FRACTION = 10
 
     @classmethod
     def pre_process(class_):
         pass
+
+    @classmethod
+    def get_cluster_grid_size(class_, bbox=None):
+        """ Given a bounding box, calculates an appropriate grid_size
+        """
+
+        log = logging.getLogger(__name__)
+
+        if bbox == None:
+            return None
+
+        bbox = bbox.split(',')
+        try:
+            # list comprehension, convert bbox to floats
+            bbox = [float(j) for j in bbox]
+        except ValueError, e:
+            # if we get a ValueError, it suggests the bbox arg didn't consist
+            # of valid floats. We can't calculate grid_size, so return None.
+            log.warn('Invalid bbox supplied: %s. Caused Error: %s', bbox, e)
+            return None;
+
+        w, s, e, n = bbox
+
+        lat_range = abs(w - e)
+        lng_range = abs(n - s)
+
+        lat_lng_range_avg = ( (lat_range + lng_range) / 2 )
+
+        grid_size = ( lat_lng_range_avg / float(class_.GRID_SIZE_WINDOW_FRACTION) )
+        grid_size = round(grid_size, 3)
+
+        if grid_size < class_.MIN_GRID_SIZE_BEFORE_NO_CLUSTERING:
+            grid_size = 0
+
+        return grid_size
 
     @classmethod
     def get_points_as_geojson(class_, grid_size=1, bounds=[-180,-90,180,90]):

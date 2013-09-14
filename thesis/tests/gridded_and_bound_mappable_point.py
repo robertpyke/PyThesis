@@ -167,3 +167,24 @@ class TestGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(result[0].locations, 'MULTIPOINT(20 10)')
         self.assertEqual(result[1].locations, 'MULTIPOINT(30 10)')
 
+    def test_get_cluster_grid_size(self):
+        bounds_1 = "-180, -90, 180, 90"
+        grid_size_1 = GriddedAndBoundMappablePoint.get_cluster_grid_size(bounds_1)
+        self.assertEqual(grid_size_1, (270.0 / GriddedAndBoundMappablePoint.GRID_SIZE_WINDOW_FRACTION))
+
+        bounds_2 = "0, 0, 180, 90"
+        grid_size_2 = GriddedAndBoundMappablePoint.get_cluster_grid_size(bounds_2)
+        self.assertEqual(grid_size_2, (135.0 / GriddedAndBoundMappablePoint.GRID_SIZE_WINDOW_FRACTION))
+
+        bounds_3 = "0, 0, 10, 10"
+        grid_size_3 = GriddedAndBoundMappablePoint.get_cluster_grid_size(bounds_3)
+        self.assertEqual(grid_size_3, (10.0 / GriddedAndBoundMappablePoint.GRID_SIZE_WINDOW_FRACTION))
+
+        bounds_4 = "0, 0, 0.0001, 0.0001"
+        grid_size_4 = GriddedAndBoundMappablePoint.get_cluster_grid_size(bounds_4)
+        self.assertTrue( ( grid_size_4 / GriddedAndBoundMappablePoint.GRID_SIZE_WINDOW_FRACTION ) < GriddedAndBoundMappablePoint.MIN_GRID_SIZE_BEFORE_NO_CLUSTERING)
+        self.assertEqual(grid_size_4, 0)
+
+        bounds_5 = "0, b, 0.0001, 0.0001"
+        grid_size_5 = GriddedAndBoundMappablePoint.get_cluster_grid_size(bounds_5)
+        self.assertEqual(None, grid_size_5)
