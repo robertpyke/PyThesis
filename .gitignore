@@ -39,3 +39,6 @@ nosetests.xml
 
 # Virtualenv
 env
+
+# Ignore swp files (vim tmp files)
+*.swp

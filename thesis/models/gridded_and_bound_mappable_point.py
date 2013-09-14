@@ -62,7 +62,7 @@ class GriddedAndBoundMappablePoint(MappablePoint):
 
         # Sort the grid sizes such that the smallest candidate grid sizes are first
         sorted_grid_sizes = sorted(class_.GRID_SIZES)
-        for item in sorted_grid_sizes:
+        for candidate_grid_size in sorted_grid_sizes:
             # If we are larger (or equal) to this grid size, normalise to it.
             if grid_size >= candidate_grid_size:
                 return_grid_size = candidate_grid_size
