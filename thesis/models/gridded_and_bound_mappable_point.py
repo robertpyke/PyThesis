@@ -53,7 +53,7 @@ class GriddedAndBoundMappablePoint(MappablePoint):
     GRID_SIZES = [0, MIN_GRID_SIZE_BEFORE_NO_CLUSTERING, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8]
 
     @classmethod
-    def normalise_grid_size(class_, grid_size)
+    def normalise_grid_size(class_, grid_size):
         """ The result is normalised such that there is only a fixed number of
             possible grid sizes. This should be used for the cache interfaces to ensure
             that we don't cache to excess.
@@ -64,7 +64,8 @@ class GriddedAndBoundMappablePoint(MappablePoint):
         sorted_grid_sizes = sorted(class_.GRID_SIZES)
         for item in sorted_grid_sizes:
             # If we are larger (or equal) to this grid size, normalise to it.
-            return_grid_size = candidate_grid_size if grid_size >= candidate_grid_size
+            if grid_size >= candidate_grid_size:
+                return_grid_size = candidate_grid_size
 
         # This will be the last grid size we found that we were larger than (or equal to).
         return return_grid_size
