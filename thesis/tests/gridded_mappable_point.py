@@ -161,3 +161,16 @@ class TestGriddedMappableItem(unittest.TestCase):
         self.assertEqual(result[0].locations, 'MULTIPOINT(20 10)')
         self.assertEqual(result[1].locations, 'MULTIPOINT(30 10)')
 
+
+    def test_normalise_grid_size(self):
+        grid_size_1 = GriddedMappablePoint.normalise_grid_size(10)
+        self.assertEqual(grid_size_1, 8)
+
+        grid_size_2 = GriddedMappablePoint.normalise_grid_size(0.00001)
+        self.assertEqual(grid_size_2, 0)
+
+        grid_size_3 = GriddedMappablePoint.normalise_grid_size(0.9)
+        self.assertEqual(grid_size_3, 0.5)
+
+        grid_size_4 = GriddedMappablePoint.normalise_grid_size(1.1)
+        self.assertEqual(grid_size_4, 1)
