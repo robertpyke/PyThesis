@@ -63,7 +63,7 @@ class GriddedMappablePoint(MappablePoint):
         return return_grid_size
 
     @classmethod
-    def pre_process(class_):
+    def pre_process(class_, **kwargs):
         pass
 
     @classmethod

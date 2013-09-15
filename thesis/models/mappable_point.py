@@ -49,9 +49,8 @@ class MappablePoint(Base):
         """
         self.location = WKTElement(location_wkt, srid=projection)
 
-
     @classmethod
-    def pre_process(class_):
+    def pre_process(class_, **kwargs):
         pass
 
     @classmethod

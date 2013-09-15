@@ -155,7 +155,7 @@ class TestGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(result3.centroid, '{"type":"Point","coordinates":[16.6666666666667,15]}')
 
     def test_bounds_not_intersecting_points(self):
-        q = GriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=1, bounds=[-180,-89,-170,-80]).\
+        q = GriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=1, bbox=[-180,-89,-170,-80]).\
             join('layer').filter(Layer.name == 'TestLayer1')
         result = q.all()
         self.assertEqual(len(result),0)

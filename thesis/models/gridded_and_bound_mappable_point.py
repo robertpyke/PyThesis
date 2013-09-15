@@ -52,21 +52,23 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
     """
     GRID_SIZE_WINDOW_FRACTION = 10
 
+    """ The number of places to round the grid size to
+    """
+    ROUND_GRID_SIZE_TO_N_PLACES = 3
+
     @classmethod
-    def pre_process(class_):
+    def pre_process(class_, **kwargs):
         pass
 
     @classmethod
-    def get_cluster_grid_size(class_, bbox=None):
-        """ Given a bounding box, calculates an appropriate grid_size
-        """
-
-        log = logging.getLogger(__name__)
-
+    def convert_bbox_string_to_array(class_, bbox=None):
         if bbox == None:
             return None
 
+        log = logging.getLogger(__name__)
+
         bbox = bbox.split(',')
+
         try:
             # list comprehension, convert bbox to floats
             bbox = [float(j) for j in bbox]
@@ -76,6 +78,19 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
             log.warn('Invalid bbox supplied: %s. Caused Error: %s', bbox, e)
             return None;
 
+        return bbox
+
+    @classmethod
+    def get_cluster_grid_size(class_, bbox=None):
+        """ Given a bounding box, calculates an appropriate grid_size
+        """
+
+        if isinstance(bbox, basestring):
+            bbox = class_.convert_bbox_string_to_array(bbox)
+
+        if bbox == None:
+            return None
+
         w, s, e, n = bbox
 
         lat_range = abs(w - e)
@@ -84,7 +99,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         lat_lng_range_avg = ( (lat_range + lng_range) / 2 )
 
         grid_size = ( lat_lng_range_avg / float(class_.GRID_SIZE_WINDOW_FRACTION) )
-        grid_size = round(grid_size, 3)
+        grid_size = round(grid_size, class_.ROUND_GRID_SIZE_TO_N_PLACES)
 
         if grid_size < class_.MIN_GRID_SIZE_BEFORE_NO_CLUSTERING:
             grid_size = 0
@@ -92,8 +107,11 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         return grid_size
 
     @classmethod
-    def get_points_as_geojson(class_, grid_size=1, bounds=[-180,-90,180,90]):
+    def get_points_as_geojson(class_, bbox=[-180,-90,180,90], grid_size=None):
         MappablePoint = class_
+
+        if grid_size == None:
+            grid_size = class_.get_cluster_grid_size(bbox)
 
         q = DBSession.query(
             geo_func.ST_AsGeoJSON(
@@ -106,14 +124,17 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bounds))
+            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
         )
 
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, grid_size=1, bounds=[-180,-90,180,90]):
+    def get_points_as_wkt(class_, bbox=[-180,-90,180,90], grid_size=None):
         MappablePoint = class_
+
+        if grid_size == None:
+            grid_size = class_.get_cluster_grid_size(bbox)
 
         q = DBSession.query(
             geo_func.ST_AsText(
@@ -126,7 +147,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bounds))
+            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
         )
 
         return q
