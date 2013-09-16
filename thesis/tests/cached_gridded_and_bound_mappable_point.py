@@ -217,3 +217,7 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         smallest_grid_size_cache_record = next(cache_record for cache_record in cache_records if cache_record.grid_size == smallest_grid_size)
         largest_grid_size_cache_record = next(cache_record for cache_record in cache_records if cache_record.grid_size == largest_grid_size)
 
+        self.assertGreater(
+                len(smallest_grid_size_cache_record.cached_mappable_point_clusters),
+                len(largest_grid_size_cache_record.cached_mappable_point_clusters)
+        )
