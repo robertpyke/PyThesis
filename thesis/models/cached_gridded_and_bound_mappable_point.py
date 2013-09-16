@@ -1,4 +1,6 @@
 from thesis.models import DBSession, Base, Layer, DEFAULT_PROJECTION
+import logging
+import ipdb
 
 from thesis.models.mappable_point import *
 from thesis.models.gridded_and_bound_mappable_point import *
@@ -73,35 +75,58 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
 
         cluster_size = Column(Integer, nullable=False)
         cluster_centroid = Column(Geometry(geometry_type='POINT', srid=DEFAULT_PROJECTION))
-        cluster_envelope = Column(Geometry(geometry_type='GEOMETRY', srid=DEFAULT_PROJECTION))
+        # cluster_envelope = Column(Geometry(geometry_type='GEOMETRY', srid=DEFAULT_PROJECTION))
 
-        def __init__(self, cluster_size, cluster_centroid_wkt, cluster_envelope_wkt, projection=DEFAULT_PROJECTION):
+        def __init__(self, cluster_size, cluster_centroid_wkt, projection=DEFAULT_PROJECTION):
             """ CachedMappablePointCluster constructor
 
                 Takes the following params:
                     * cluster_size: An Integer
                     * cluster_centroid_wkt: A WKT description of the cluster's centroid
-                    * cluster_envelope_wkt: A WKT description of the cluster's envelope
                     * projection : The EPSG projection as an integer
             """
             self.cluster_size = cluster_size
             self.cluster_centroid = WKTElement(cluster_centroid_wkt, srid=projection)
-            self.cluster_envelope = WKTElement(cluster_envelope_wkt, srid=projection)
-
-    def __init__(self):
-        pass
 
     @classmethod
     def pre_process(class_, **kwargs):
         """ Generate the cache for all normalised grid sizes"""
-        generate_all_cached_clusters()
+        layers = DBSession.query(Layer).all()
+        for layer in layers:
+            class_.generate_cache_for_all_grid_size(layer)
 
     @classmethod
-    def generate_all_cached_clusters():
-        pass
+    def generate_cache_for_all_grid_size(class_, layer):
+        """ Generate the cache for all species, at all grid levels, that have out-of-date caches
+            and have a total of equal to or more than cache_occurrence_clusters_threshold records.
+        """
+        log = logging.getLogger(__name__)
+        log.info("Generating cache for all grid sizes")
 
+        for grid_size in class_.GRID_SIZES:
+            class_.generate_cache_clusters(layer, grid_size)
 
+        log.info("Finished generating cache for all grid sizes")
 
+    @classmethod
+    def generate_cache_clusters(class_, layer, grid_size):
+        log = logging.getLogger(__name__)
+        log.info("Generating cache for grid size: %s", grid_size)
+
+        cache_record = class_.CacheRecord(grid_size)
+
+        clusters = GriddedAndBoundMappablePoint.get_points_as_wkt(grid_size=grid_size)\
+                .filter(
+                    MappablePoint.layer_id == layer.id
+                )
+
+        for cluster in clusters:
+            centroid = cluster.centroid
+            cluster_size = cluster.cluster_size
+            cached_mappable_cluster = class_.CachedMappablePointCluster(cluster_size, centroid)
+            cache_record.cached_mappable_point_clusters.append(cached_mappable_cluster)
+
+        layer.cache_records.append(cache_record)
 
     @classmethod
     def get_points_as_geojson(class_, bbox=[-180,-90,180,90], grid_size=None):
@@ -118,7 +143,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bounds))
+            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
         )
 
         return q
@@ -138,7 +163,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bounds))
+            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
         )
 
         return q
