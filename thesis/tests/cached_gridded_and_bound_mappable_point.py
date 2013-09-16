@@ -1,6 +1,7 @@
 import unittest
 import transaction
 import os
+import ipdb
 
 import csv
 
@@ -87,6 +88,8 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
 
             DBSession.add(emu_layer)
 
+            CachedGriddedAndBoundMappablePoint.pre_process()
+
     def tearDown(self):
 
         DBSession.remove()
@@ -115,6 +118,7 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertGreater(len(test_emu_layer.mappable_points), 5)
 
     def test_get_layer_points_as_geo_json(self):
+
         test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
         test_layer_2 = DBSession.query(Layer).filter_by(name='TestLayer2').one()
 
@@ -136,6 +140,7 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(result3[1].cluster_size, 1)
 
     def test_get_cluster_centroids_as_geo_json(self):
+
         test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
         test_layer_2 = DBSession.query(Layer).filter_by(name='TestLayer2').one()
 
@@ -147,6 +152,7 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(result[1].cluster_size, 1)
 
         q2 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=100)
+        #ipdb.set_trace()
         result2 = q2.one()
         self.assertEqual(result2.centroid, '{"type":"Point","coordinates":[25,10]}')
 
@@ -155,12 +161,14 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(result3.centroid, '{"type":"Point","coordinates":[16.6666666666667,15]}')
 
     def test_bounds_not_intersecting_points(self):
+
         test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
         q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=1, bbox=[-180,-89,-170,-80])
         result = q.all()
         self.assertEqual(len(result),0)
 
     def test_get_layer_points_as_wkt(self):
+
         test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
         q = CachedGriddedAndBoundMappablePoint.get_points_as_wkt(test_layer_1, grid_size=1)
         result = q.all()
@@ -193,8 +201,7 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         # Confirm that once the preprocess is complete, we have a cache
         # record for every grid size
         test_emu_layer = DBSession.query(Layer).filter_by(name='Emu').one()
-        self.assertEqual(len(test_emu_layer.cache_records), 0)
-        CachedGriddedAndBoundMappablePoint.pre_process()
+        # self.assertEqual(len(test_emu_layer.cache_records), 0)
         self.assertEqual(len(test_emu_layer.cache_records), len(CachedGriddedAndBoundMappablePoint.GRID_SIZES))
 
         # Once preproccessing is complete, we should have cached clusters with

@@ -42,7 +42,7 @@ class GriddedMappablePoint(MappablePoint):
     MIN_GRID_SIZE_BEFORE_NO_CLUSTERING = 0.015
 
     """ The possible grid sizes that should be used (the normalised grid sizes) """
-    GRID_SIZES = [0, MIN_GRID_SIZE_BEFORE_NO_CLUSTERING, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8]
+    GRID_SIZES = [0, MIN_GRID_SIZE_BEFORE_NO_CLUSTERING, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128]
 
     @classmethod
     def normalise_grid_size(class_, grid_size):

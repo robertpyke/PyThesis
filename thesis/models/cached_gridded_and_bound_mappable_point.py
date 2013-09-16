@@ -74,19 +74,22 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         cache_record = relationship("CacheRecord", backref=backref("cached_mappable_point_clusters", order_by=id, enable_typechecks=False))
 
         cluster_size = Column(Integer, nullable=False)
-        cluster_centroid = Column(Geometry(geometry_type='POINT', srid=DEFAULT_PROJECTION))
+        centroid = Column(Geometry(geometry_type='POINT', srid=DEFAULT_PROJECTION))
+        locations = Column(Geometry(geometry_type='MULTIPOINT', srid=DEFAULT_PROJECTION))
         # cluster_envelope = Column(Geometry(geometry_type='GEOMETRY', srid=DEFAULT_PROJECTION))
 
-        def __init__(self, cluster_size, cluster_centroid_wkt, projection=DEFAULT_PROJECTION):
+        def __init__(self, cluster_size, centroid, locations, projection=DEFAULT_PROJECTION):
             """ CachedMappablePointCluster constructor
 
                 Takes the following params:
                     * cluster_size: An Integer
-                    * cluster_centroid_wkt: A WKT description of the cluster's centroid
+                    * centroid: A WKT description of the cluster's centroid
+                    * locations: A WKT description of the cluster's locations
                     * projection : The EPSG projection as an integer
             """
             self.cluster_size = cluster_size
-            self.cluster_centroid = WKTElement(cluster_centroid_wkt, srid=projection)
+            self.centroid = WKTElement(centroid, srid=projection)
+            self.locations = WKTElement(locations, srid=projection)
 
     @classmethod
     def pre_process(class_, **kwargs):
@@ -123,51 +126,64 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         for cluster in clusters:
             centroid = cluster.centroid
             cluster_size = cluster.cluster_size
-            cached_mappable_cluster = class_.CachedMappablePointCluster(cluster_size, centroid)
+            locations = cluster.locations
+            cached_mappable_cluster = class_.CachedMappablePointCluster(cluster_size, centroid, locations)
             cache_record.cached_mappable_point_clusters.append(cached_mappable_cluster)
 
         layer.cache_records.append(cache_record)
 
     @classmethod
     def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
-        MappablePoint = class_
+
+        # If no grid size was provided, calculate it from the bbox
+        if grid_size == None:
+            grid_size = class_.get_cluster_grid_size(bbox)
+
+        # Normalise our grid size to one of the standard grid sizes
+        normalised_grid_size = class_.normalise_grid_size(grid_size)
+
+        cache_record = next(cache_record for cache_record in layer.cache_records if cache_record.grid_size == normalised_grid_size)
 
         q = DBSession.query(
             geo_func.ST_AsGeoJSON(
-                ST_Collect(MappablePoint.location)
+                class_.CachedMappablePointCluster.locations
             ).label("locations"),
             geo_func.ST_AsGeoJSON(
-                geo_func.ST_Centroid(ST_Collect(MappablePoint.location))
-            ).label('centroid'),
-            func.count(MappablePoint.location).label('cluster_size')
-        ).group_by(
-            ST_SnapToGrid(MappablePoint.location, grid_size)
+                class_.CachedMappablePointCluster.centroid
+            ).label("centroid"),
+            class_.CachedMappablePointCluster.cluster_size.label("cluster_size")
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
+            class_.CachedMappablePointCluster.centroid.intersects(ST_MakeEnvelope(*bbox))
         ).filter(
-            MappablePoint.layer_id == layer.id
+            class_.CachedMappablePointCluster.cache_record_id == cache_record.id
         )
 
         return q
 
     @classmethod
     def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
-        MappablePoint = class_
+
+        # If no grid size was provided, calculate it from the bbox
+        if grid_size == None:
+            grid_size = class_.get_cluster_grid_size(bbox)
+
+        # Normalise our grid size to one of the standard grid sizes
+        normalised_grid_size = class_.normalise_grid_size(grid_size)
+
+        cache_record = next(cache_record for cache_record in layer.cache_records if cache_record.grid_size == normalised_grid_size)
 
         q = DBSession.query(
             geo_func.ST_AsText(
-                ST_Collect(MappablePoint.location)
+                class_.CachedMappablePointCluster.locations
             ).label("locations"),
             geo_func.ST_AsText(
-                geo_func.ST_Centroid(ST_Collect(MappablePoint.location))
-            ).label('centroid'),
-            func.count(MappablePoint.location).label('cluster_size')
-        ).group_by(
-            ST_SnapToGrid(MappablePoint.location, grid_size)
+                class_.CachedMappablePointCluster.centroid
+            ).label("centroid"),
+            class_.CachedMappablePointCluster.cluster_size.label("cluster_size")
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
+            class_.CachedMappablePointCluster.centroid.intersects(ST_MakeEnvelope(*bbox))
         ).filter(
-            MappablePoint.layer_id == layer.id
+            class_.CachedMappablePointCluster.cache_record_id == cache_record.id
         )
 
         return q
