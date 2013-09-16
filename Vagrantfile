@@ -22,4 +22,10 @@ Vagrant.configure("2") do |config|
     salt.install_args = 'v0.16.0'
   end
 
+  # Overide default virtualbox config options
+  config.vm.provider :virtualbox do |vb|
+    # Give the VM 1GB of memory
+    vb.customize ["modifyvm", :id, "--memory", "2048"]
+  end
+
 end

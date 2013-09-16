@@ -1,6 +1,5 @@
 from thesis.models import DBSession, Base, Layer, DEFAULT_PROJECTION
 import logging
-import ipdb
 
 from thesis.models.mappable_point import *
 from thesis.models.gridded_and_bound_mappable_point import *
@@ -92,11 +91,9 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
             self.locations = WKTElement(locations, srid=projection)
 
     @classmethod
-    def pre_process(class_, **kwargs):
+    def pre_process(class_, layer, **kwargs):
         """ Generate the cache for all normalised grid sizes"""
-        layers = DBSession.query(Layer).all()
-        for layer in layers:
-            class_.generate_cache_for_all_grid_size(layer)
+        class_.generate_cache_for_all_grid_size(layer)
 
     @classmethod
     def generate_cache_for_all_grid_size(class_, layer):
@@ -104,17 +101,17 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
             and have a total of equal to or more than cache_occurrence_clusters_threshold records.
         """
         log = logging.getLogger(__name__)
-        log.info("Generating cache for all grid sizes")
+        log.debug("Generating cache for all grid sizes")
 
         for grid_size in class_.GRID_SIZES:
             class_.generate_cache_clusters(layer, grid_size)
 
-        log.info("Finished generating cache for all grid sizes")
+        log.debug("Finished generating cache for all grid sizes")
 
     @classmethod
     def generate_cache_clusters(class_, layer, grid_size):
         log = logging.getLogger(__name__)
-        log.info("Generating cache for grid size: %s", grid_size)
+        log.debug("Generating cache for grid size: %s", grid_size)
 
         cache_record = class_.CacheRecord(grid_size)
 
@@ -133,7 +130,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         layer.cache_records.append(cache_record)
 
     @classmethod
-    def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None, **kwargs):
 
         # If no grid size was provided, calculate it from the bbox
         if grid_size == None:
@@ -161,7 +158,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None, **kwargs):
 
         # If no grid size was provided, calculate it from the bbox
         if grid_size == None:

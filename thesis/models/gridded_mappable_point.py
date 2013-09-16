@@ -63,11 +63,11 @@ class GriddedMappablePoint(MappablePoint):
         return return_grid_size
 
     @classmethod
-    def pre_process(class_, **kwargs):
+    def pre_process(class_, layer, **kwargs):
         pass
 
     @classmethod
-    def get_points_as_geojson(class_, layer, grid_size=1):
+    def get_points_as_geojson(class_, layer, grid_size=1, **kwargs):
         MappablePoint = class_
 
         q = DBSession.query(
@@ -87,7 +87,7 @@ class GriddedMappablePoint(MappablePoint):
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, layer, grid_size=1):
+    def get_points_as_wkt(class_, layer, grid_size=1, **kwargs):
         MappablePoint = class_
 
         q = DBSession.query(

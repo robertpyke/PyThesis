@@ -57,7 +57,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
     ROUND_GRID_SIZE_TO_N_PLACES = 3
 
     @classmethod
-    def pre_process(class_, **kwargs):
+    def pre_process(class_, layer, **kwargs):
         pass
 
     @classmethod
@@ -107,7 +107,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         return grid_size
 
     @classmethod
-    def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None, **kwargs):
         MappablePoint = class_
 
         if grid_size == None:
@@ -132,7 +132,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None, **kwargs):
         MappablePoint = class_
 
         if grid_size == None:

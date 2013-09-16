@@ -48,5 +48,6 @@ setup(name='thesis',
       initialize_thesis_db = thesis.scripts.initialize_db:main
       destroy_db = thesis.scripts.destroy_db:main
       seed_db = thesis.scripts.seed_db:main
+      test_scenario_one = thesis.scripts.test_scenario_one:main
       """,
       )

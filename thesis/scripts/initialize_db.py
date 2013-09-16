@@ -17,6 +17,9 @@ def usage(argv):
           '(example: "%s development.ini")' % (cmd, cmd))
     sys.exit(1)
 
+def initialize_db(engine):
+    Base.metadata.create_all(engine)
+
 
 def main(argv=sys.argv):
     if len(argv) != 2:
@@ -26,4 +29,4 @@ def main(argv=sys.argv):
     settings = get_appsettings(config_uri)
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
-    Base.metadata.create_all(engine)
+    initialize_db(engine)

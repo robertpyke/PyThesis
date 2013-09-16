@@ -88,7 +88,9 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
 
             DBSession.add(emu_layer)
 
-            CachedGriddedAndBoundMappablePoint.pre_process()
+        layers = DBSession.query(Layer).all()
+        for layer in layers:
+            CachedGriddedAndBoundMappablePoint.pre_process(layer)
 
     def tearDown(self):
 
@@ -148,8 +150,8 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         result = q.all()
         self.assertEqual(result[0].centroid, '{"type":"Point","coordinates":[20,10]}')
         self.assertEqual(result[1].centroid, '{"type":"Point","coordinates":[30,10]}')
-        self.assertEqual(result[0].cluster_size, 1)
         self.assertEqual(result[1].cluster_size, 1)
+        self.assertEqual(result[0].cluster_size, 1)
 
         q2 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=100)
         #ipdb.set_trace()

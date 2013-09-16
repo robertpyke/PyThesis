@@ -12,29 +12,24 @@ from pyramid.paster import (
 
 from thesis.models import *
 
+LAYER_NAMES = [
+    "10_points_worldwide",
+    "100_points_worldwide",
+    "1k_points_worldwide",
+    "10k_points_worldwide",
+    "100k_points_worldwide",
+    "1m_points_worldwide",
+]
+
+
 def usage(argv):
     cmd = os.path.basename(argv[0])
     print('usage: %s <config_uri>\n'
           '(example: "%s development.ini")' % (cmd, cmd))
     sys.exit(1)
 
-def main(argv=sys.argv):
-    if len(argv) != 2:
-        usage(argv)
-    config_uri = argv[1]
-    setup_logging(config_uri)
-    settings = get_appsettings(config_uri)
-    engine = engine_from_config(settings, 'sqlalchemy.')
-    DBSession.configure(bind=engine)
-
+def seed_db(layer_names = LAYER_NAMES):
     with transaction.manager:
-
-        layer_names = [
-            "10_points_worldwide",
-            "100_points_worldwide",
-            "1k_points_worldwide",
-            "10k_points_worldwide",
-        ]
 
         scripts_path = os.path.dirname(os.path.abspath(__file__))
         test_fixtures_path = os.path.join(scripts_path, '..', 'tests', 'fixtures')
@@ -55,3 +50,13 @@ def main(argv=sys.argv):
                     layer.mappable_points.append(mappable_point)
 
             DBSession.add(layer)
+
+def main(argv=sys.argv):
+    if len(argv) != 2:
+        usage(argv)
+    config_uri = argv[1]
+    setup_logging(config_uri)
+    settings = get_appsettings(config_uri)
+    engine = engine_from_config(settings, 'sqlalchemy.')
+    DBSession.configure(bind=engine)
+    seed_db()

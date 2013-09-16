@@ -32,3 +32,4 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     # Drop all the models
     Base.metadata.drop_all(engine)
+    DBSession.remove()
