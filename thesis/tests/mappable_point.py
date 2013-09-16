@@ -115,19 +115,21 @@ class TestMappableItem(unittest.TestCase):
         self.assertGreater(len(test_emu_layer.mappable_points), 5)
 
     def test_get_layer_points_as_geo_json(self):
-        q = MappablePoint.get_points_as_geojson().\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
+        test_layer_2 = DBSession.query(Layer).filter_by(name='TestLayer2').one()
+
+        q = MappablePoint.get_points_as_geojson(test_layer_1)
         result = q.one()
         self.assertEqual(result.locations, '{"type":"MultiPoint","coordinates":[[30,10],[20,10]]}')
 
-        q2 = MappablePoint.get_points_as_geojson().\
-            join('layer').filter(Layer.name == 'TestLayer2')
+        q2 = MappablePoint.get_points_as_geojson(test_layer_2)
         result2 = q2.one()
         self.assertEqual(result2.locations, '{"type":"MultiPoint","coordinates":[[10,15],[10,15],[30,15]]}')
 
     def test_get_layer_points_as_wkt(self):
-        q = MappablePoint.get_points_as_wkt().\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
+
+        q = MappablePoint.get_points_as_wkt(test_layer_1)
         result = q.one()
         self.assertEqual(result.locations, 'MULTIPOINT(30 10,20 10)')
 

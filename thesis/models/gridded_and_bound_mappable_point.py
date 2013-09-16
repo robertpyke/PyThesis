@@ -107,7 +107,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         return grid_size
 
     @classmethod
-    def get_points_as_geojson(class_, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
         MappablePoint = class_
 
         if grid_size == None:
@@ -125,12 +125,14 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
             MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
         MappablePoint = class_
 
         if grid_size == None:
@@ -148,6 +150,8 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
             MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q

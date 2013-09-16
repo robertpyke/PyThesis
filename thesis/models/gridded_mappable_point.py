@@ -67,7 +67,7 @@ class GriddedMappablePoint(MappablePoint):
         pass
 
     @classmethod
-    def get_points_as_geojson(class_, grid_size=1):
+    def get_points_as_geojson(class_, layer, grid_size=1):
         MappablePoint = class_
 
         q = DBSession.query(
@@ -80,12 +80,14 @@ class GriddedMappablePoint(MappablePoint):
             func.count(MappablePoint.location).label('cluster_size')
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, grid_size=1):
+    def get_points_as_wkt(class_, layer, grid_size=1):
         MappablePoint = class_
 
         q = DBSession.query(
@@ -98,6 +100,8 @@ class GriddedMappablePoint(MappablePoint):
             func.count(MappablePoint.location).label('cluster_size')
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q

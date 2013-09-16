@@ -115,20 +115,20 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertGreater(len(test_emu_layer.mappable_points), 5)
 
     def test_get_layer_points_as_geo_json(self):
-        q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=1).\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
+        test_layer_2 = DBSession.query(Layer).filter_by(name='TestLayer2').one()
+
+        q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=1)
         result = q.all()
         self.assertEqual(result[0].locations, '{"type":"MultiPoint","coordinates":[[20,10]]}')
         self.assertEqual(result[1].locations, '{"type":"MultiPoint","coordinates":[[30,10]]}')
 
-        q2 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=100).\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        q2 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=100)
         result2 = q2.all()
         self.assertEqual(result2[0].locations, '{"type":"MultiPoint","coordinates":[[30,10],[20,10]]}')
         self.assertEqual(result2[0].cluster_size, 2)
 
-        q3 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=1).\
-            join('layer').filter(Layer.name == 'TestLayer2')
+        q3 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_2, grid_size=1)
         result3 = q3.all()
         self.assertEqual(result3[0].locations, '{"type":"MultiPoint","coordinates":[[10,15],[10,15]]}')
         self.assertEqual(result3[1].locations, '{"type":"MultiPoint","coordinates":[[30,15]]}')
@@ -136,33 +136,33 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(result3[1].cluster_size, 1)
 
     def test_get_cluster_centroids_as_geo_json(self):
-        q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=1).\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
+        test_layer_2 = DBSession.query(Layer).filter_by(name='TestLayer2').one()
+
+        q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=1)
         result = q.all()
         self.assertEqual(result[0].centroid, '{"type":"Point","coordinates":[20,10]}')
         self.assertEqual(result[1].centroid, '{"type":"Point","coordinates":[30,10]}')
         self.assertEqual(result[0].cluster_size, 1)
         self.assertEqual(result[1].cluster_size, 1)
 
-        q2 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=100).\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        q2 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=100)
         result2 = q2.one()
         self.assertEqual(result2.centroid, '{"type":"Point","coordinates":[25,10]}')
 
-        q3 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=100).\
-            join('layer').filter(Layer.name == 'TestLayer2')
+        q3 = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_2, grid_size=100)
         result3 = q3.one()
         self.assertEqual(result3.centroid, '{"type":"Point","coordinates":[16.6666666666667,15]}')
 
     def test_bounds_not_intersecting_points(self):
-        q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(grid_size=1, bbox=[-180,-89,-170,-80]).\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
+        q = CachedGriddedAndBoundMappablePoint.get_points_as_geojson(test_layer_1, grid_size=1, bbox=[-180,-89,-170,-80])
         result = q.all()
         self.assertEqual(len(result),0)
 
     def test_get_layer_points_as_wkt(self):
-        q = CachedGriddedAndBoundMappablePoint.get_points_as_wkt(grid_size=1).\
-            join('layer').filter(Layer.name == 'TestLayer1')
+        test_layer_1 = DBSession.query(Layer).filter_by(name='TestLayer1').one()
+        q = CachedGriddedAndBoundMappablePoint.get_points_as_wkt(test_layer_1, grid_size=1)
         result = q.all()
         self.assertEqual(result[0].locations, 'MULTIPOINT(20 10)')
         self.assertEqual(result[1].locations, 'MULTIPOINT(30 10)')
@@ -190,4 +190,30 @@ class TestCachedGriddedAndBoundMappableItem(unittest.TestCase):
         self.assertEqual(None, grid_size_5)
 
     def test_pre_process(self):
+        # Confirm that once the preprocess is complete, we have a cache
+        # record for every grid size
+        test_emu_layer = DBSession.query(Layer).filter_by(name='Emu').one()
+        self.assertEqual(len(test_emu_layer.cache_records), 0)
         CachedGriddedAndBoundMappablePoint.pre_process()
+        self.assertEqual(len(test_emu_layer.cache_records), len(CachedGriddedAndBoundMappablePoint.GRID_SIZES))
+
+        # Once preproccessing is complete, we should have cached clusters with
+        # cluster sizes summing to the total number of mappable points for the
+        # layer.
+        cache_records = test_emu_layer.cache_records
+        for cache_record in cache_records:
+            clusters = cache_record.cached_mappable_point_clusters
+            total_clusters_size = 0
+            for cluster in clusters:
+                total_clusters_size += cluster.cluster_size
+
+            self.assertEqual(len(test_emu_layer.mappable_points),total_clusters_size)
+
+        # We would expect that the highest grid size would have the fewest number
+        # of cached_mappable_point_clusters, and that the smallest grid size
+        # would have the most.
+        smallest_grid_size = sorted(CachedGriddedAndBoundMappablePoint.GRID_SIZES)[0]
+        largest_grid_size = sorted(CachedGriddedAndBoundMappablePoint.GRID_SIZES)[-1]
+        smallest_grid_size_cache_record = next(cache_record for cache_record in cache_records if cache_record.grid_size == smallest_grid_size)
+        largest_grid_size_cache_record = next(cache_record for cache_record in cache_records if cache_record.grid_size == largest_grid_size)
+

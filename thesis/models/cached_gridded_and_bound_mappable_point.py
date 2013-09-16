@@ -115,7 +115,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
 
         cache_record = class_.CacheRecord(grid_size)
 
-        clusters = GriddedAndBoundMappablePoint.get_points_as_wkt(grid_size=grid_size)\
+        clusters = GriddedAndBoundMappablePoint.get_points_as_wkt(layer, grid_size=grid_size)\
                 .filter(
                     MappablePoint.layer_id == layer.id
                 )
@@ -129,7 +129,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         layer.cache_records.append(cache_record)
 
     @classmethod
-    def get_points_as_geojson(class_, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_geojson(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
         MappablePoint = class_
 
         q = DBSession.query(
@@ -144,12 +144,14 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
             MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, bbox=[-180,-90,180,90], grid_size=None):
+    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None):
         MappablePoint = class_
 
         q = DBSession.query(
@@ -164,6 +166,8 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
             MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q

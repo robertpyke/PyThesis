@@ -54,25 +54,29 @@ class MappablePoint(Base):
         pass
 
     @classmethod
-    def get_points_as_geojson(class_):
+    def get_points_as_geojson(class_, layer, **kwargs):
         MappablePoint = class_
 
         q = DBSession.query(
             func.ST_AsGeoJSON(
                 ST_Collect(MappablePoint.location)
             ).label("locations")
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q
 
     @classmethod
-    def get_points_as_wkt(class_):
+    def get_points_as_wkt(class_, layer, **kwargs):
         MappablePoint = class_
 
         q = DBSession.query(
             func.ST_AsText(
                 ST_Collect(MappablePoint.location)
             ).label("locations")
+        ).filter(
+            MappablePoint.layer_id == layer.id
         )
 
         return q
