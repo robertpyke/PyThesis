@@ -1,0 +1,6 @@
+grep "Mem" memory_1.txt | awk '{print $3}' > used.csv
+
+grep "Tue Sep" memory_1.txt > mem_times.csv
+cat mem_times.csv | awk '{print $4}' > mem_times_2.csv
+
+paste mem_times_2.csv used.csv > mem_used_with_time_2.csv
