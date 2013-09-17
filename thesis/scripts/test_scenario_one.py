@@ -77,33 +77,39 @@ def main(argv=sys.argv):
             log.debug("Init DB")
             DBSession.configure(bind=engine)
             initialize_db(engine)
+            log.debug("End Init DB")
 
             before_db_size = None
             after_db_size = None
 
             # Seed DB
+            log.debug("Start Seed DB")
             with transaction.manager:
                 # Seed DB
-                log.debug("Seeding DB")
                 seed_db([layer_name])
 
+            log.debug("End Seed DB")
+
             # Pre-Process DB
+            log.debug("Start Pre-Process DB")
+
+            before_db_size = get_db_size(engine)
             with transaction.manager:
                 layer = DBSession.query(Layer).filter_by(name=layer_name).one()
-
-                before_db_size = get_db_size(engine)
 
                 print "\n"
                 # Run Pre Process
                 class_.test_pre_process(layer)
                 print "\n"
 
-                after_db_size = get_db_size(engine)
+            after_db_size = get_db_size(engine)
 
-                delta_db_size = after_db_size - before_db_size
+            delta_db_size = after_db_size - before_db_size
 
-                log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer.name, before_db_size, after_db_size, delta_db_size)
+            log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer.name, before_db_size, after_db_size, delta_db_size)
+            log.debug("End Pre-Process DB")
 
+            log.debug("Start Run Tests")
             # Run Tests on DB
             with transaction.manager:
                 layer = DBSession.query(Layer).filter_by(name=layer_name).one()
@@ -124,6 +130,7 @@ def main(argv=sys.argv):
 
                     print "\n"
 
+            log.debug("End Run Tests")
             log.debug("End tests for class: %s", class_.__name__)
 
         log.debug("End tests for layer: %s", layer_name)
