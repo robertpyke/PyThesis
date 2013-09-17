@@ -46,7 +46,7 @@ class ST_MakeEnvelope(GenericFunction):
     name = 'ST_MakeEnvelope'
     type = None
 
-class GriddedAndBoundMappablePoint(GriddedMappablePoint, BoundMappablePoint):
+class GriddedAndBoundMappablePoint(GriddedMappablePoint):
 
     """ The grid size is the span of the window divided by GRID_SIZE_WINDOW_FRACTION
         The total number of grids will, on average, be GRID_SIZE_WINDOW_FRACTION^2
@@ -67,7 +67,7 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint, BoundMappablePoint):
         """
 
         if isinstance(bbox, basestring):
-            bbox = class_.convert_bbox_string_to_array(bbox)
+            bbox = BoundMappablePoint.convert_bbox_string_to_array(bbox)
 
         if bbox == None:
             return None
