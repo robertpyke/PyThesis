@@ -14,11 +14,11 @@ from pyramid.paster import (
 from thesis.models import *
 
 LAYER_NAMES = [
-#    "10_points_worldwide",
-#    "100_points_worldwide",
-#    "1k_points_worldwide",
-#    "10k_points_worldwide",
-#    "100k_points_worldwide",
+    "10_points_worldwide",
+    "100_points_worldwide",
+    "1k_points_worldwide",
+    "10k_points_worldwide",
+    "100k_points_worldwide",
     "1m_points_worldwide",
 ]
 
