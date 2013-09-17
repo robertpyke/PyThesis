@@ -2,6 +2,7 @@ import os
 import sys
 import transaction
 import csv
+import logging
 
 from sqlalchemy import engine_from_config
 
@@ -13,11 +14,11 @@ from pyramid.paster import (
 from thesis.models import *
 
 LAYER_NAMES = [
-    "10_points_worldwide",
-    "100_points_worldwide",
-    "1k_points_worldwide",
-    "10k_points_worldwide",
-    "100k_points_worldwide",
+#    "10_points_worldwide",
+#    "100_points_worldwide",
+#    "1k_points_worldwide",
+#    "10k_points_worldwide",
+#    "100k_points_worldwide",
     "1m_points_worldwide",
 ]
 
@@ -29,27 +30,35 @@ def usage(argv):
     sys.exit(1)
 
 def seed_db(layer_names = LAYER_NAMES):
-    with transaction.manager:
+    log = logging.getLogger(__name__)
 
-        scripts_path = os.path.dirname(os.path.abspath(__file__))
-        test_fixtures_path = os.path.join(scripts_path, '..', 'tests', 'fixtures')
+    scripts_path = os.path.dirname(os.path.abspath(__file__))
+    test_fixtures_path = os.path.join(scripts_path, '..', 'tests', 'fixtures')
 
-        for layer_name in layer_names:
-            layer = Layer(layer_name)
+    for layer_name in layer_names:
+        layer = Layer(layer_name)
+        DBSession.add(layer)
 
-            layer_csv_path = os.path.join(test_fixtures_path, layer_name + '.csv')
+        layer_csv_path = os.path.join(test_fixtures_path, layer_name + '.csv')
 
-            with open(layer_csv_path, 'rb') as csvfile:
-                layer_reader = csv.reader(csvfile)
+        with open(layer_csv_path, 'rb') as csvfile:
+            layer_reader = csv.reader(csvfile)
 
-                for row in layer_reader:
-                    longitude = row[0]
-                    latitude = row[1]
+            i = 0
+            for row in layer_reader:
+                i += 1
+                longitude = row[0]
+                latitude = row[1]
 
-                    mappable_point = MappablePoint('Point(%s %s)' % (longitude, latitude))
-                    layer.mappable_points.append(mappable_point)
+                mappable_point = MappablePoint('Point(%s %s)' % (longitude, latitude))
+                layer.mappable_points.append(mappable_point)
 
-            DBSession.add(layer)
+                if (i % 10000 == 0):
+                    log.debug("Up to point: %i", i)
+                    DBSession.flush()
+
+        DBSession.flush()
+
 
 def main(argv=sys.argv):
     if len(argv) != 2:
@@ -59,4 +68,5 @@ def main(argv=sys.argv):
     settings = get_appsettings(config_uri)
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
-    seed_db()
+    with transaction.manager:
+        seed_db()

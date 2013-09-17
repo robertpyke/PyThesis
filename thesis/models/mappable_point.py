@@ -92,9 +92,9 @@ class MappablePoint(Base):
         MappablePoint = class_
 
         q = DBSession.query(
-            geo_func.ST_AsGeoJSON(
-                ST_Multi(ST_Collect(MappablePoint.location))
-            ).label("locations"),
+#            geo_func.ST_AsGeoJSON(
+#                ST_Multi(ST_Collect(MappablePoint.location))
+#            ).label("locations"),
             geo_func.ST_AsGeoJSON(
                 MappablePoint.location
             ).label('centroid'),
@@ -194,9 +194,9 @@ class MappablePoint(Base):
         MappablePoint = class_
 
         q = DBSession.query(
-            geo_func.ST_AsText(
-                ST_Multi(ST_Collect(MappablePoint.location))
-            ).label("locations"),
+#            geo_func.ST_AsText(
+#                ST_Multi(ST_Collect(MappablePoint.location))
+#            ).label("locations"),
             geo_func.ST_AsText(
                 MappablePoint.location
             ).label('centroid'),

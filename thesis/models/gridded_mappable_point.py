@@ -71,9 +71,9 @@ class GriddedMappablePoint(MappablePoint):
         MappablePoint = class_
 
         q = DBSession.query(
-            geo_func.ST_AsGeoJSON(
-                ST_Collect(MappablePoint.location)
-            ).label("locations"),
+#            geo_func.ST_AsGeoJSON(
+#                ST_Collect(MappablePoint.location)
+#            ).label("locations"),
             geo_func.ST_AsGeoJSON(
                 geo_func.ST_Centroid(ST_Collect(MappablePoint.location))
             ).label('centroid'),
@@ -91,9 +91,9 @@ class GriddedMappablePoint(MappablePoint):
         MappablePoint = class_
 
         q = DBSession.query(
-            geo_func.ST_AsText(
-                ST_Collect(MappablePoint.location)
-            ).label("locations"),
+#            geo_func.ST_AsText(
+#                ST_Collect(MappablePoint.location)
+#            ).label("locations"),
             geo_func.ST_AsText(
                 geo_func.ST_Centroid(ST_Collect(MappablePoint.location))
             ).label('centroid'),

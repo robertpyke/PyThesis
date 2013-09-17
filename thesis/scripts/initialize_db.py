@@ -20,7 +20,6 @@ def usage(argv):
 def initialize_db(engine):
     Base.metadata.create_all(engine)
 
-
 def main(argv=sys.argv):
     if len(argv) != 2:
         usage(argv)

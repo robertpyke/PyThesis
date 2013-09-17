@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
 
   # Overide default virtualbox config options
   config.vm.provider :virtualbox do |vb|
-    # Give the VM 1GB of memory
+    # Give the VM 2GB of memory
     vb.customize ["modifyvm", :id, "--memory", "2048"]
   end
 

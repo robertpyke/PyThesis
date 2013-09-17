@@ -78,39 +78,51 @@ def main(argv=sys.argv):
             DBSession.configure(bind=engine)
             initialize_db(engine)
 
+            before_db_size = None
+            after_db_size = None
+
             # Seed DB
-            log.debug("Seeding DB")
-            seed_db([layer_name])
+            with transaction.manager:
+                # Seed DB
+                log.debug("Seeding DB")
+                seed_db([layer_name])
 
-            before_db_size = get_db_size(engine)
+            # Pre-Process DB
+            with transaction.manager:
+                layer = DBSession.query(Layer).filter_by(name=layer_name).one()
 
-            layer = DBSession.query(Layer).filter_by(name=layer_name).one()
-
-            print "\n"
-            # Run Pre Process
-            class_.test_pre_process(layer)
-            print "\n"
-
-            after_db_size = get_db_size(engine)
-            delta_db_size = after_db_size - before_db_size
-
-            log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer.name, before_db_size, after_db_size, delta_db_size)
-
-            for bbox in bboxes:
-
-                # Get geo_json for layer
-                class_.test_get_points_as_geojson(layer, bbox=bbox)
-
-                # Get wkt for layer
-                class_.test_get_points_as_wkt(layer, bbox=bbox)
-
-                # Generate clusters GeoJSON
-                class_.test_generate_clusters_geojson(layer, bbox=bbox)
-
-                # Generate clusters WKT
-                class_.test_generate_clusters_wkt(layer, bbox=bbox)
+                before_db_size = get_db_size(engine)
 
                 print "\n"
+                # Run Pre Process
+                class_.test_pre_process(layer)
+                print "\n"
+
+                after_db_size = get_db_size(engine)
+
+                delta_db_size = after_db_size - before_db_size
+
+                log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer.name, before_db_size, after_db_size, delta_db_size)
+
+            # Run Tests on DB
+            with transaction.manager:
+                layer = DBSession.query(Layer).filter_by(name=layer_name).one()
+
+                for bbox in bboxes:
+
+                    # Get geo_json for layer
+                    class_.test_get_points_as_geojson(layer, bbox=bbox)
+
+                    # Get wkt for layer
+                    class_.test_get_points_as_wkt(layer, bbox=bbox)
+
+                    # Generate clusters GeoJSON
+                    class_.test_generate_clusters_geojson(layer, bbox=bbox)
+
+                    # Generate clusters WKT
+                    class_.test_generate_clusters_wkt(layer, bbox=bbox)
+
+                    print "\n"
 
             log.debug("End tests for class: %s", class_.__name__)
 
