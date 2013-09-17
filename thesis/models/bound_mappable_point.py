@@ -45,7 +45,7 @@ class ST_MakeEnvelope(GenericFunction):
     name = 'ST_MakeEnvelope'
     type = None
 
-class BoundMappablePoint(GriddedMappablePoint):
+class BoundMappablePoint(MappablePoint):
 
     @classmethod
     def pre_process(class_, layer, **kwargs):
@@ -65,7 +65,7 @@ class BoundMappablePoint(GriddedMappablePoint):
             bbox = [float(j) for j in bbox]
         except ValueError, e:
             # if we get a ValueError, it suggests the bbox arg didn't consist
-            # of valid floats. We can't calculate grid_size, so return None.
+            # of valid floats. Return None.
             log.warn('Invalid bbox supplied: %s. Caused Error: %s', bbox, e)
             return None;
 
@@ -94,11 +94,8 @@ class BoundMappablePoint(GriddedMappablePoint):
         return q
 
     @classmethod
-    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], grid_size=None, **kwargs):
+    def get_points_as_wkt(class_, layer, bbox=[-180,-90,180,90], **kwargs):
         MappablePoint = class_
-
-        if grid_size == None:
-            grid_size = class_.get_cluster_grid_size(bbox)
 
         q = DBSession.query(
 #            geo_func.ST_AsText(
