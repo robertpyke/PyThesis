@@ -87,12 +87,10 @@ def main(argv=sys.argv):
             with transaction.manager:
                 # Seed DB
                 seed_db([layer_name])
-
             log.debug("End Seed DB")
 
             # Pre-Process DB
             log.debug("Start Pre-Process DB")
-
             before_db_size = get_db_size(engine)
             with transaction.manager:
                 layer = DBSession.query(Layer).filter_by(name=layer_name).one()
@@ -103,10 +101,8 @@ def main(argv=sys.argv):
                 print "\n"
 
             after_db_size = get_db_size(engine)
-
             delta_db_size = after_db_size - before_db_size
-
-            log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer.name, before_db_size, after_db_size, delta_db_size)
+            log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer_name, before_db_size, after_db_size, delta_db_size)
             log.debug("End Pre-Process DB")
 
             log.debug("Start Run Tests")
@@ -129,7 +125,6 @@ def main(argv=sys.argv):
                     class_.test_generate_clusters_wkt(layer, bbox=bbox)
 
                     print "\n"
-
             log.debug("End Run Tests")
             log.debug("End tests for class: %s", class_.__name__)
 
