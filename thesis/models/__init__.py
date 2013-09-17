@@ -20,6 +20,7 @@ DEFAULT_PROJECTION = 4326
 
 from thesis.models.layer import *
 from thesis.models.mappable_point import *
+from thesis.models.bound_mappable_point import *
 from thesis.models.gridded_mappable_point import *
 from thesis.models.gridded_and_bound_mappable_point import *
 from thesis.models.cached_gridded_and_bound_mappable_point import *
