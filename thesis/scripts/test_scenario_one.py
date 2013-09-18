@@ -63,6 +63,7 @@ def main(argv=sys.argv):
     ]
 
     lines = []
+    lines.append(["DEBUG", "layers", LAYER_NAMES])
 
     for layer_name in LAYER_NAMES:
         log = logging.getLogger(__name__)
