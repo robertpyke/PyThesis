@@ -21,6 +21,14 @@ import datetime
 
 import csv
 
+def mkdir_p(path):
+    try:
+        os.makedirs(path)
+    except OSError as exc: # Python >2.5
+        if exc.errno == errno.EEXIST and os.path.isdir(path):
+            pass
+        else: raise
+
 def usage(argv):
     cmd = os.path.basename(argv[0])
     print('usage: %s <config_uri>\n'
@@ -151,7 +159,20 @@ def main(argv=sys.argv):
 
         log.debug("End tests for layer: %s", layer_name)
 
-        time_now = datetime.datetime.now()
-        with open("results %s.csv" % time_now, 'wb') as csvfile:
-            my_writer = csv.writer(csvfile, delimiter=',')
-            my_writer.writerows(lines)
+    time_now = datetime.datetime.now()
+
+    results_dir = "results %s" % time_now
+    mkdir_p(results_dir)
+
+    result_file = os.path.join(results_dir, "results.csv")
+    with open(result_file, 'wb') as csvfile:
+        my_writer = csv.writer(csvfile, delimiter=',')
+        my_writer.writerows(lines)
+
+    pre_process_lines = MappablePoint.generate_pre_process_csv_rows(lines)
+    pre_process_file = os.path.join(results_dir, "pre_process.csv")
+    with open(pre_process_file, 'wb') as csvfile:
+        my_writer = csv.writer(csvfile, delimiter=',')
+        my_writer.writerows(pre_process_lines)
+
+

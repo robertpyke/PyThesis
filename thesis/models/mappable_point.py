@@ -90,6 +90,52 @@ class MappablePoint(Base):
         return ["pre_process", class_.__name__, layer.name, delta_t_s, kwargs, class_.extra_log_details()]
 
     @classmethod
+    def uniq_list(class_, seq):
+        seen = set()
+        seen_add = seen.add
+        return [ x for x in seq if x not in seen and not seen_add(x)]
+
+    @classmethod
+    def generate_pre_process_csv_rows(class_, in_rows):
+        pre_process_rows =  [row for row in in_rows if row[0] == "pre_process"]
+
+        out_rows = []
+        layer_name_row = ["Strategy"]
+
+        layer_names = []
+
+        strategies = {}
+
+        for row in pre_process_rows:
+            strategy   = row[1]
+            layer_name = row[2]
+            delta_t_s  = row[3]
+
+            if strategy not in strategies:
+                strategies[strategy] = {}
+            strategies[strategy][layer_name] = delta_t_s
+
+            layer_names.append(layer_name)
+
+        uniq_layer_names = class_.uniq_list(layer_names)
+        layer_names = sorted(uniq_layer_names)
+
+        # Generate header
+        for layer_name in layer_names:
+            layer_name_row.append(layer_name)
+        out_rows.append(layer_name_row)
+
+        # Generate row for each strategy
+        for strategy_name, strategy_dict in strategies.iteritems():
+            row = [strategy_name]
+            for layer_name in layer_names:
+                delta_t_s = strategy_dict[layer_name]
+                row.append(delta_t_s)
+            out_rows.append(row)
+
+        return out_rows
+
+    @classmethod
     def get_points_as_geojson(class_, layer, **kwargs):
         MappablePoint = class_
 
