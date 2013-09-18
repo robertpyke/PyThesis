@@ -75,17 +75,19 @@ class MappablePoint(Base):
 
         end_t = datetime.datetime.now()
         delta_t = end_t - start_t
+        delta_t_s = delta_t.seconds + ( delta_t.microseconds *  (10 ** -6) )
 
         log.debug("End: pre_process")
 
         log.info(
-            "(%s) pre_process(%s, %s) took: seconds: %i, microseconds: %i",
+            "(%s) pre_process(%s, %s) took: seconds: %i",
             class_.__name__,
             layer.name,
             kwargs,
-            delta_t.seconds,
-            delta_t.microseconds
+            delta_t_s,
         )
+
+        return ["pre_process", class_.__name__, layer.name, delta_t_s, kwargs, class_.extra_log_details()]
 
     @classmethod
     def get_points_as_geojson(class_, layer, **kwargs):
@@ -119,21 +121,23 @@ class MappablePoint(Base):
 
         end_t = datetime.datetime.now()
         delta_t = end_t - start_t
+        delta_t_s = delta_t.seconds + ( delta_t.microseconds *  (10 ** -6) )
 
         log.debug("End: get_points_as_geojson")
 
         log.info(
-            "(%s) get_points_as_geojson(%s, %s) clusters: %i, took: seconds: %i, microseconds: %i",
+            "(%s) get_points_as_geojson(%s, %s) clusters: %i, took: seconds: %i",
             class_.__name__,
             layer.name,
             kwargs,
             len(result),
-            delta_t.seconds,
-            delta_t.microseconds
+            delta_t_s,
         )
 
+        return ["get_points_as_geojson", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
+
     @classmethod
-    def generate_clusters_geojson(class_, layer, **kwargs):
+    def get_points_as_geojson_str(class_, layer, **kwargs):
         q = class_.get_points_as_geojson(layer, **kwargs)
         result = q.all()
 
@@ -158,36 +162,31 @@ class MappablePoint(Base):
         return json.dumps(return_geojson_obj)
 
     @classmethod
-    def test_generate_clusters_geojson(class_, layer, **kwargs):
+    def test_get_points_as_geojson_str(class_, layer, **kwargs):
         log = logging.getLogger(__name__)
 
-        log.debug("Start: generate_clusters_geojson")
+        log.debug("Start: get_points_as_geojson_str")
 
         start_t = datetime.datetime.now()
 
-        result = class_.generate_clusters_geojson(layer, **kwargs)
+        result = class_.get_points_as_geojson_str(layer, **kwargs)
 
         end_t = datetime.datetime.now()
         delta_t = end_t - start_t
+        delta_t_s = delta_t.seconds + ( delta_t.microseconds *  (10 ** -6) )
 
-        log.debug("End: generate_clusters_geojson")
-
-        log.info(
-            "(%s) generate_clusters_geojson(%s, %s) took: seconds: %i, microseconds: %i",
-            class_.__name__,
-            layer.name,
-            kwargs,
-            delta_t.seconds,
-            delta_t.microseconds
-        )
+        log.debug("End: get_points_as_geojson_str")
 
         log.info(
-            "(%s) generate_clusters_geojson(%s, %s) string length: %i",
+            "(%s) get_points_as_geojson_str(%s, %s) string length: %i, took: seconds: %i",
             class_.__name__,
             layer.name,
             kwargs,
             len(result),
+            delta_t_s,
         )
+
+        return ["get_points_as_geojson_str", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
 
     @classmethod
     def get_points_as_wkt(class_, layer, **kwargs):
@@ -221,21 +220,23 @@ class MappablePoint(Base):
 
         end_t = datetime.datetime.now()
         delta_t = end_t - start_t
+        delta_t_s = delta_t.seconds + ( delta_t.microseconds *  (10 ** -6) )
 
         log.debug("End: get_points_as_wkt")
 
         log.info(
-            "(%s) get_points_as_wkt(%s, %s) clusters: %i, took: seconds: %i, microseconds: %i",
+            "(%s) get_points_as_wkt(%s, %s) clusters: %i, took: seconds: %i",
             class_.__name__,
             layer.name,
             kwargs,
             len(result),
-            delta_t.seconds,
-            delta_t.microseconds
+            delta_t_s,
         )
 
+        return ["get_points_as_wkt", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
+
     @classmethod
-    def generate_clusters_wkt(class_, layer, **kwargs):
+    def get_points_as_wkt_str(class_, layer, **kwargs):
         q = class_.get_points_as_wkt(layer, **kwargs)
         result = q.all()
 
@@ -250,33 +251,34 @@ class MappablePoint(Base):
         return return_str
 
     @classmethod
-    def test_generate_clusters_wkt(class_, layer, **kwargs):
+    def test_get_points_as_wkt_str(class_, layer, **kwargs):
         log = logging.getLogger(__name__)
 
-        log.debug("Start: generate_clusters_wkt")
+        log.debug("Start: get_points_as_wkt_str")
 
         start_t = datetime.datetime.now()
 
-        result = class_.generate_clusters_wkt(layer, **kwargs)
+        result = class_.get_points_as_wkt_str(layer, **kwargs)
 
         end_t = datetime.datetime.now()
         delta_t = end_t - start_t
+        delta_t_s = delta_t.seconds + ( delta_t.microseconds *  (10 ** -6) )
 
-        log.debug("End: generate_clusters_wkt")
+        log.debug("End: get_points_as_wkt_str")
 
-        log.info(
-            "(%s) generate_clusters_wkt(%s, %s) took: seconds: %i, microseconds: %i",
-            class_.__name__,
-            layer.name,
-            kwargs,
-            delta_t.seconds,
-            delta_t.microseconds
-        )
+
 
         log.info(
-            "(%s) generate_clusters_wkt(%s, %s) string length: %i",
+            "(%s) get_points_as_wkt_str(%s, %s) string length: %i, took: seconds: %i",
             class_.__name__,
             layer.name,
             kwargs,
             len(result),
+            delta_t_s,
         )
+
+        return ["get_points_as_wkt_str", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
+
+    @classmethod
+    def extra_log_details(class_):
+        return {}

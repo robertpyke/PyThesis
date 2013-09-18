@@ -18,6 +18,8 @@ from thesis.scripts.initialize_db import initialize_db
 
 from time import sleep
 
+import csv
+
 def usage(argv):
     cmd = os.path.basename(argv[0])
     print('usage: %s <config_uri>\n'
@@ -59,6 +61,8 @@ def main(argv=sys.argv):
         [137.834, -10.7, 153.513336, -28.17], # Queensland
     ]
 
+    lines = []
+
     for layer_name in LAYER_NAMES:
         log = logging.getLogger(__name__)
 
@@ -96,18 +100,19 @@ def main(argv=sys.argv):
             with transaction.manager:
                 layer = DBSession.query(Layer).filter_by(name=layer_name).one()
 
-                print "\n"
                 # Run Pre Process
-                class_.test_pre_process(layer)
-                print "\n"
-
-            # Collect Garbage
-            gc.collect()
+                res_pre_process= class_.test_pre_process(layer)
+                lines.append(res_pre_process)
+                log.info("RES: %s", res_pre_process)
 
             after_db_size = get_db_size(engine)
             delta_db_size = after_db_size - before_db_size
-            log.info("(%s) Start, End, Delta DB size: %i B, %i B, %i B", layer_name, before_db_size, after_db_size, delta_db_size)
+            log.info("(%s) (%s) Start, End, Delta DB size: %i B, %i B, %i B", class_.__name__, layer_name, before_db_size, after_db_size, delta_db_size)
             log.debug("End Pre-Process DB")
+
+            db_delta_info = ["database_delta_info", class_.__name__, layer_name, before_db_size, after_db_size, delta_db_size]
+            lines.append(db_delta_info)
+            log.info("RES: %s", db_delta_info)
 
             log.debug("Start Run Tests")
             # Run Tests on DB
@@ -117,26 +122,33 @@ def main(argv=sys.argv):
                 for bbox in bboxes:
 
                     # Get geo_json for layer
-                    class_.test_get_points_as_geojson(layer, bbox=bbox)
+                    res_points_as_geo_json = class_.test_get_points_as_geojson(layer, bbox=bbox)
 
                     # Get wkt for layer
-                    class_.test_get_points_as_wkt(layer, bbox=bbox)
+                    res_points_as_wkt = class_.test_get_points_as_wkt(layer, bbox=bbox)
 
                     # Generate clusters GeoJSON
-                    class_.test_generate_clusters_geojson(layer, bbox=bbox)
+                    res_points_as_geo_json_str = class_.test_get_points_as_geojson_str(layer, bbox=bbox)
 
                     # Generate clusters WKT
-                    class_.test_generate_clusters_wkt(layer, bbox=bbox)
+                    res_points_as_wkt_str = class_.test_get_points_as_wkt_str(layer, bbox=bbox)
 
-                    print "\n"
+                    log.info("RES: %s", res_points_as_geo_json)
+                    log.info("RES: %s", res_points_as_wkt)
+                    log.info("RES: %s", res_points_as_geo_json_str)
+                    log.info("RES: %s", res_points_as_wkt_str)
+
+                    lines.append(res_points_as_geo_json)
+                    lines.append(res_points_as_wkt)
+                    lines.append(res_points_as_geo_json_str)
+                    lines.append(res_points_as_wkt_str)
+
             log.debug("End Run Tests")
-
-            # Collect Garbage
-            gc.collect()
 
             log.debug("End tests for class: %s", class_.__name__)
 
         log.debug("End tests for layer: %s", layer_name)
 
-        # Collect Garbage
-        gc.collect()
+        with open('results.csv', 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(lines)

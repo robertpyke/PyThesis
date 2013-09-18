@@ -191,3 +191,10 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         )
 
         return q
+
+    @classmethod
+    def extra_log_details(class_):
+        return {
+            "grid_sizes": class_.GRID_SIZES,
+            "grid_sizes_length": len(class_.GRID_SIZES),
+        }
