@@ -1,0 +1,71 @@
+DEBUG,layers,['10_points_worldwide']
+pre_process,MappablePoint,10_points_worldwide,1.3e-05,{},{}
+database_delta_info,MappablePoint,10_points_worldwide,12981368,12981368,0
+get_points_as_geojson,MappablePoint,10_points_worldwide,10,0.030754999999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,10_points_worldwide,10,0.003,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_worldwide,1450,0.001807,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_worldwide,436,0.0017059999999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,10_points_worldwide,10,0.001455,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,10_points_worldwide,10,0.001359,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_worldwide,1450,0.00164,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_worldwide,436,0.0014299999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,10_points_worldwide,10,0.001451,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,10_points_worldwide,10,0.0014119999999999998,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_worldwide,1450,0.001645,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_worldwide,436,0.001415,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+pre_process,GriddedMappablePoint,10_points_worldwide,1.1e-05,{},{}
+database_delta_info,GriddedMappablePoint,10_points_worldwide,12981368,12981368,0
+get_points_as_geojson,GriddedMappablePoint,10_points_worldwide,10,0.005102,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_worldwide,10,0.001878,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_worldwide,1450,0.0022919999999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_worldwide,436,0.001805,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_worldwide,10,0.0018139999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_worldwide,10,0.001774,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_worldwide,1450,0.002043,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_worldwide,436,0.00179,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_worldwide,10,0.001846,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_worldwide,10,0.0017779999999999998,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_worldwide,1450,0.002264,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_worldwide,436,0.001779,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+pre_process,BoundMappablePoint,10_points_worldwide,1.2e-05,{},{}
+database_delta_info,BoundMappablePoint,10_points_worldwide,12981368,12981368,0
+get_points_as_geojson,BoundMappablePoint,10_points_worldwide,10,0.002203,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_worldwide,10,0.0017699999999999999,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_worldwide,1450,0.002013,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_worldwide,436,0.0018349999999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_worldwide,0,0.001682,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_worldwide,0,0.001923,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_worldwide,45,0.0016389999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_worldwide,20,0.0015769999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_worldwide,0,0.001769,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_worldwide,0,0.001607,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_worldwide,45,0.0016569999999999998,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_worldwide,20,0.001601,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+pre_process,GriddedAndBoundMappablePoint,10_points_worldwide,1.2e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,10_points_worldwide,12981368,12981368,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_worldwide,9,0.00266,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_worldwide,9,0.002111,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_worldwide,1310,0.002372,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_worldwide,395,0.00213,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_worldwide,0,0.001874,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_worldwide,0,0.0018679999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_worldwide,45,0.0021219999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_worldwide,20,0.001843,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_worldwide,0,0.0018859999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_worldwide,0,0.0017729999999999998,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_worldwide,45,0.0018989999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_worldwide,20,0.001939,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,10_points_worldwide,0.22627599999999998,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,10_points_worldwide,12989560,13055096,65536
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_worldwide,10,0.0030499999999999998,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_worldwide,10,0.001506,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_worldwide,1450,0.001745,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_worldwide,436,0.001519,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_worldwide,0,0.001338,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_worldwide,0,0.0013289999999999999,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_worldwide,45,0.001738,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_worldwide,20,0.0013009999999999999,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_worldwide,0,0.0013599999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_worldwide,0,0.001323,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_worldwide,45,0.00139,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_worldwide,20,0.001323,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
