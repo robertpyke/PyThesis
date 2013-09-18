@@ -17,6 +17,7 @@ from thesis.scripts.seed_db import seed_db, LAYER_NAMES
 from thesis.scripts.initialize_db import initialize_db
 
 from time import sleep
+import datetime
 
 import csv
 
@@ -149,6 +150,7 @@ def main(argv=sys.argv):
 
         log.debug("End tests for layer: %s", layer_name)
 
-        with open('results.csv', 'wb') as csvfile:
+        time_now = datetime.datetime.now()
+        with open("results %s.csv" % time_now, 'wb') as csvfile:
             my_writer = csv.writer(csvfile, delimiter=',')
             my_writer.writerows(lines)
