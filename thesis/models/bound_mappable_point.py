@@ -1,9 +1,15 @@
 import logging
 
-from thesis.models import DBSession, Base, Layer, DEFAULT_PROJECTION
+from thesis.models import (
+    DBSession,
+    Base,
+    Layer,
+    DEFAULT_PROJECTION,
+    ST_SnapToGrid,
+    ST_MakeEnvelope,
+    )
 
 from thesis.models.mappable_point import *
-from thesis.models.gridded_mappable_point import *
 
 from sqlalchemy import (
     Column,
@@ -31,19 +37,6 @@ from geoalchemy2.functions import GenericFunction
 import geoalchemy2.functions as geo_func
 
 
-class ST_SnapToGrid(GenericFunction):
-    """
-    Return type: None
-    """
-    name = 'ST_SnapToGrid'
-    type = None
-
-class ST_MakeEnvelope(GenericFunction):
-    """
-    Return type: None
-    """
-    name = 'ST_MakeEnvelope'
-    type = None
 
 class BoundMappablePoint(MappablePoint):
 

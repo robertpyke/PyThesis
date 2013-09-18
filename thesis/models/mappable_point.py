@@ -29,6 +29,14 @@ from geoalchemy2 import *
 from geoalchemy2.functions import GenericFunction
 import geoalchemy2.functions as geo_func
 
+class ST_SnapToGrid(GenericFunction):
+    """
+    Return type: None
+    """
+    name = 'ST_SnapToGrid'
+    type = None
+
+
 class ST_Collect(GenericFunction):
     """
     Return type: :class:`geoalchemy2.types.Geometry`.
@@ -42,6 +50,13 @@ class ST_Multi(GenericFunction):
     """
     name = 'ST_Multi'
     type = types.Geometry
+
+class ST_MakeEnvelope(GenericFunction):
+    """
+    Return type: None
+    """
+    name = 'ST_MakeEnvelope'
+    type = None
 
 class MappablePoint(Base):
     __tablename__ = 'mappable_points'
