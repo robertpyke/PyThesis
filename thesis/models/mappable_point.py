@@ -2,6 +2,8 @@ from thesis.models import DBSession, Base, Layer, DEFAULT_PROJECTION
 import logging
 import datetime
 import json
+import csv
+import os
 
 from sqlalchemy import (
     Column,
@@ -60,6 +62,22 @@ class MappablePoint(Base):
         self.location = WKTElement(location_wkt, srid=projection)
 
     @classmethod
+    def uniq_list(class_, seq):
+        seen = set()
+        seen_add = seen.add
+        return [ x for x in seq if x not in seen and not seen_add(x)]
+
+    @classmethod
+    def write_csvs(class_, results_dir, in_rows):
+        class_.write_pre_process_csv(results_dir, in_rows)
+
+        class_.write_get_points_as_geojson_csv(results_dir, in_rows)
+        class_.write_get_points_as_wkt_csv(results_dir, in_rows)
+
+        class_.write_get_points_as_geojson_str_csv(results_dir, in_rows)
+        class_.write_get_points_as_wkt_str_csv(results_dir, in_rows)
+
+    @classmethod
     def pre_process(class_, layer, **kwargs):
         pass
 
@@ -90,14 +108,8 @@ class MappablePoint(Base):
         return ["pre_process", class_.__name__, layer.name, delta_t_s, kwargs, class_.extra_log_details()]
 
     @classmethod
-    def uniq_list(class_, seq):
-        seen = set()
-        seen_add = seen.add
-        return [ x for x in seq if x not in seen and not seen_add(x)]
-
-    @classmethod
-    def generate_pre_process_csv_rows(class_, in_rows):
-        pre_process_rows =  [row for row in in_rows if row[0] == "pre_process"]
+    def write_pre_process_csv(class_, results_dir, in_rows):
+        rows =  [row for row in in_rows if row[0] == "pre_process"]
 
         out_rows = []
         layer_name_row = ["Strategy"]
@@ -106,7 +118,7 @@ class MappablePoint(Base):
 
         strategies = {}
 
-        for row in pre_process_rows:
+        for row in rows:
             strategy   = row[1]
             layer_name = row[2]
             delta_t_s  = row[3]
@@ -133,7 +145,11 @@ class MappablePoint(Base):
                 row.append(delta_t_s)
             out_rows.append(row)
 
-        return out_rows
+        pre_process_file = os.path.join(results_dir, "pre_process.csv")
+        # Write pre_process_file
+        with open(pre_process_file, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(out_rows)
 
     @classmethod
     def get_points_as_geojson(class_, layer, **kwargs):
@@ -181,6 +197,87 @@ class MappablePoint(Base):
         )
 
         return ["get_points_as_geojson", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
+
+
+    @classmethod
+    def write_get_points_as_geojson_csv(class_, results_dir, in_rows):
+        rows =  [row for row in in_rows if row[0] == "get_points_as_geojson"]
+
+        time_rows = []
+        cluster_size_rows = []
+
+        layer_name_row = ["Strategy", "BBOX"]
+
+        layer_names = []
+        bboxes = []
+
+        strategies = {}
+
+        for row in rows:
+            strategy   = row[1]
+            layer_name = row[2]
+            clusters   = row[3]
+            delta_t_s  = row[4]
+            kwargs     = row[5]
+            bbox       = str(kwargs["bbox"])
+
+            if strategy not in strategies:
+                strategies[strategy] = {}
+
+            if layer_name not in strategies[strategy]:
+                strategies[strategy][layer_name] = {}
+
+            strategies[strategy][layer_name][bbox] = {
+                "delta_t_s": delta_t_s,
+                "clusters": clusters,
+            }
+
+            bboxes.append(bbox)
+            layer_names.append(layer_name)
+
+        uniq_layer_names = class_.uniq_list(layer_names)
+        layer_names = sorted(uniq_layer_names)
+
+        uniq_bboxes = class_.uniq_list(bboxes)
+        bboxes = sorted(uniq_bboxes)
+
+        # Generate header
+        for layer_name in layer_names:
+            layer_name_row.append(layer_name)
+
+        # Add the header to the output CSVs
+        time_rows.append(layer_name_row)
+        cluster_size_rows.append(layer_name_row)
+
+        # Generate row for each strategy, and each bbox
+        for strategy_name, strategy_dict in strategies.iteritems():
+            for bbox in bboxes:
+                # Now write a row for each strategy/bbox/layer combo
+
+                time_row = [strategy_name, bbox]
+                cluster_size_row = [strategy_name, bbox]
+
+                # 1st, do time.
+                for layer_name in layer_names:
+                    details = strategy_dict[layer_name][bbox]
+
+                    time_row.append(details["delta_t_s"])
+                    cluster_size_row.append(details["clusters"])
+
+                time_rows.append(time_row)
+                cluster_size_rows.append(cluster_size_row)
+
+        get_points_as_geojson_time_csv = os.path.join(results_dir, "get_points_as_geojson_time.csv")
+        # Write time file
+        with open(get_points_as_geojson_time_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(time_rows)
+
+        get_points_as_geojson_cluster_size_csv = os.path.join(results_dir, "get_points_as_geojson_cluster_size.csv")
+        # Write cluster_size file
+        with open(get_points_as_geojson_cluster_size_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(cluster_size_rows)
 
     @classmethod
     def get_points_as_geojson_str(class_, layer, **kwargs):
@@ -235,6 +332,110 @@ class MappablePoint(Base):
         return ["get_points_as_geojson_str", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
 
     @classmethod
+    def write_get_points_as_geojson_str_csv(class_, results_dir, in_rows):
+        rows =  [row for row in in_rows if row[0] == "get_points_as_geojson_str"]
+
+        time_rows = []
+        string_length_rows = []
+
+        layer_name_row = ["Strategy", "BBOX"]
+
+        layer_names = []
+        bboxes = []
+
+        strategies = {}
+
+        for row in rows:
+            strategy   = row[1]
+            layer_name = row[2]
+            string_length = row[3]
+            delta_t_s  = row[4]
+            kwargs     = row[5]
+            bbox       = str(kwargs["bbox"])
+
+            if strategy not in strategies:
+                strategies[strategy] = {}
+
+            if layer_name not in strategies[strategy]:
+                strategies[strategy][layer_name] = {}
+
+            strategies[strategy][layer_name][bbox] = {
+                "delta_t_s": delta_t_s,
+                "string_length": string_length,
+            }
+
+            bboxes.append(bbox)
+            layer_names.append(layer_name)
+
+        uniq_layer_names = class_.uniq_list(layer_names)
+        layer_names = sorted(uniq_layer_names)
+
+        uniq_bboxes = class_.uniq_list(bboxes)
+        bboxes = sorted(uniq_bboxes)
+
+        # Generate header
+        for layer_name in layer_names:
+            layer_name_row.append(layer_name)
+
+        # Add the header to the output CSVs
+        time_rows.append(layer_name_row)
+        string_length_rows.append(layer_name_row)
+
+        # Generate row for each strategy, and each bbox
+        for strategy_name, strategy_dict in strategies.iteritems():
+            for bbox in bboxes:
+                # Now write a row for each strategy/bbox/layer combo
+
+                time_row = [strategy_name, bbox]
+                string_length_row = [strategy_name, bbox]
+
+                for layer_name in layer_names:
+                    details = strategy_dict[layer_name][bbox]
+
+                    time_row.append(details["delta_t_s"])
+                    string_length_row.append(details["string_length"])
+
+                time_rows.append(time_row)
+                string_length_rows.append(string_length_row)
+
+        get_points_as_geojson_str_time_csv = os.path.join(results_dir, "get_points_as_geojson_str_time.csv")
+        # Write time file
+        with open(get_points_as_geojson_str_time_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(time_rows)
+
+        get_points_as_geojson_str_string_length_csv = os.path.join(results_dir, "get_points_as_geojson_str_string_length.csv")
+        # Write string_length file
+        with open(get_points_as_geojson_str_string_length_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(string_length_rows)
+
+    @classmethod
+    def get_points_as_geojson_str(class_, layer, **kwargs):
+        q = class_.get_points_as_geojson(layer, **kwargs)
+        result = q.all()
+
+        return_geojson_obj = {
+            "type": "FeatureCollection",
+            "features": [
+            ]
+        }
+
+        for el in result:
+            centroid     = json.loads(el.centroid)
+            cluster_size = el.cluster_size
+
+            return_geojson_obj["features"].append({
+                "type": "Feature",
+                "geometry": centroid,
+                "properties": {
+                    "cluster_size": cluster_size
+                }
+            })
+
+        return json.dumps(return_geojson_obj)
+
+    @classmethod
     def get_points_as_wkt(class_, layer, **kwargs):
         MappablePoint = class_
 
@@ -282,6 +483,86 @@ class MappablePoint(Base):
         return ["get_points_as_wkt", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
 
     @classmethod
+    def write_get_points_as_wkt_csv(class_, results_dir, in_rows):
+        rows =  [row for row in in_rows if row[0] == "get_points_as_wkt"]
+
+        time_rows = []
+        cluster_size_rows = []
+
+        layer_name_row = ["Strategy", "BBOX"]
+
+        layer_names = []
+        bboxes = []
+
+        strategies = {}
+
+        for row in rows:
+            strategy   = row[1]
+            layer_name = row[2]
+            clusters   = row[3]
+            delta_t_s  = row[4]
+            kwargs     = row[5]
+            bbox       = str(kwargs["bbox"])
+
+            if strategy not in strategies:
+                strategies[strategy] = {}
+
+            if layer_name not in strategies[strategy]:
+                strategies[strategy][layer_name] = {}
+
+            strategies[strategy][layer_name][bbox] = {
+                "delta_t_s": delta_t_s,
+                "clusters": clusters,
+            }
+
+            bboxes.append(bbox)
+            layer_names.append(layer_name)
+
+        uniq_layer_names = class_.uniq_list(layer_names)
+        layer_names = sorted(uniq_layer_names)
+
+        uniq_bboxes = class_.uniq_list(bboxes)
+        bboxes = sorted(uniq_bboxes)
+
+        # Generate header
+        for layer_name in layer_names:
+            layer_name_row.append(layer_name)
+
+        # Add the header to the output CSVs
+        time_rows.append(layer_name_row)
+        cluster_size_rows.append(layer_name_row)
+
+        # Generate row for each strategy, and each bbox
+        for strategy_name, strategy_dict in strategies.iteritems():
+            for bbox in bboxes:
+                # Now write a row for each strategy/bbox/layer combo
+
+                time_row = [strategy_name, bbox]
+                cluster_size_row = [strategy_name, bbox]
+
+                # 1st, do time.
+                for layer_name in layer_names:
+                    details = strategy_dict[layer_name][bbox]
+
+                    time_row.append(details["delta_t_s"])
+                    cluster_size_row.append(details["clusters"])
+
+                time_rows.append(time_row)
+                cluster_size_rows.append(cluster_size_row)
+
+        get_points_as_wkt_time_csv = os.path.join(results_dir, "get_points_as_wkt_time.csv")
+        # Write time file
+        with open(get_points_as_wkt_time_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(time_rows)
+
+        get_points_as_wkt_cluster_size_csv = os.path.join(results_dir, "get_points_as_wkt_cluster_size.csv")
+        # Write cluster_size file
+        with open(get_points_as_wkt_cluster_size_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(cluster_size_rows)
+
+    @classmethod
     def get_points_as_wkt_str(class_, layer, **kwargs):
         q = class_.get_points_as_wkt(layer, **kwargs)
         result = q.all()
@@ -324,6 +605,85 @@ class MappablePoint(Base):
         )
 
         return ["get_points_as_wkt_str", class_.__name__, layer.name, len(result), delta_t_s, kwargs, class_.extra_log_details()]
+
+    @classmethod
+    def write_get_points_as_wkt_str_csv(class_, results_dir, in_rows):
+        rows =  [row for row in in_rows if row[0] == "get_points_as_wkt_str"]
+
+        time_rows = []
+        string_length_rows = []
+
+        layer_name_row = ["Strategy", "BBOX"]
+
+        layer_names = []
+        bboxes = []
+
+        strategies = {}
+
+        for row in rows:
+            strategy   = row[1]
+            layer_name = row[2]
+            string_length = row[3]
+            delta_t_s  = row[4]
+            kwargs     = row[5]
+            bbox       = str(kwargs["bbox"])
+
+            if strategy not in strategies:
+                strategies[strategy] = {}
+
+            if layer_name not in strategies[strategy]:
+                strategies[strategy][layer_name] = {}
+
+            strategies[strategy][layer_name][bbox] = {
+                "delta_t_s": delta_t_s,
+                "string_length": string_length,
+            }
+
+            bboxes.append(bbox)
+            layer_names.append(layer_name)
+
+        uniq_layer_names = class_.uniq_list(layer_names)
+        layer_names = sorted(uniq_layer_names)
+
+        uniq_bboxes = class_.uniq_list(bboxes)
+        bboxes = sorted(uniq_bboxes)
+
+        # Generate header
+        for layer_name in layer_names:
+            layer_name_row.append(layer_name)
+
+        # Add the header to the output CSVs
+        time_rows.append(layer_name_row)
+        string_length_rows.append(layer_name_row)
+
+        # Generate row for each strategy, and each bbox
+        for strategy_name, strategy_dict in strategies.iteritems():
+            for bbox in bboxes:
+                # Now write a row for each strategy/bbox/layer combo
+
+                time_row = [strategy_name, bbox]
+                string_length_row = [strategy_name, bbox]
+
+                for layer_name in layer_names:
+                    details = strategy_dict[layer_name][bbox]
+
+                    time_row.append(details["delta_t_s"])
+                    string_length_row.append(details["string_length"])
+
+                time_rows.append(time_row)
+                string_length_rows.append(string_length_row)
+
+        get_points_as_wkt_str_time_csv = os.path.join(results_dir, "get_points_as_wkt_str_time.csv")
+        # Write time file
+        with open(get_points_as_wkt_str_time_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(time_rows)
+
+        get_points_as_wkt_str_string_length_csv = os.path.join(results_dir, "get_points_as_wkt_str_string_length.csv")
+        # Write string_length file
+        with open(get_points_as_wkt_str_string_length_csv, 'wb') as csvfile:
+            my_writer = csv.writer(csvfile, delimiter=',')
+            my_writer.writerows(string_length_rows)
 
     @classmethod
     def extra_log_details(class_):
