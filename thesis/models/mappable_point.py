@@ -98,7 +98,7 @@ class MappablePoint(Base):
         log.debug("End: pre_process")
 
         log.info(
-            "(%s) pre_process(%s, %s) took: seconds: %i",
+            "(%s) pre_process(%s, %s) took: seconds: %f",
             class_.__name__,
             layer.name,
             kwargs,
@@ -188,7 +188,7 @@ class MappablePoint(Base):
         log.debug("End: get_points_as_geojson")
 
         log.info(
-            "(%s) get_points_as_geojson(%s, %s) clusters: %i, took: seconds: %i",
+            "(%s) get_points_as_geojson(%s, %s) clusters: %i, took: seconds: %f",
             class_.__name__,
             layer.name,
             kwargs,
@@ -321,7 +321,7 @@ class MappablePoint(Base):
         log.debug("End: get_points_as_geojson_str")
 
         log.info(
-            "(%s) get_points_as_geojson_str(%s, %s) string length: %i, took: seconds: %i",
+            "(%s) get_points_as_geojson_str(%s, %s) string length: %i, took: seconds: %f",
             class_.__name__,
             layer.name,
             kwargs,
@@ -472,7 +472,7 @@ class MappablePoint(Base):
         log.debug("End: get_points_as_wkt")
 
         log.info(
-            "(%s) get_points_as_wkt(%s, %s) clusters: %i, took: seconds: %i",
+            "(%s) get_points_as_wkt(%s, %s) clusters: %i, took: seconds: %f",
             class_.__name__,
             layer.name,
             kwargs,
@@ -596,7 +596,7 @@ class MappablePoint(Base):
 
 
         log.info(
-            "(%s) get_points_as_wkt_str(%s, %s) string length: %i, took: seconds: %i",
+            "(%s) get_points_as_wkt_str(%s, %s) string length: %i, took: seconds: %f",
             class_.__name__,
             layer.name,
             kwargs,
