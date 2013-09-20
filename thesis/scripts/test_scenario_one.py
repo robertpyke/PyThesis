@@ -71,7 +71,6 @@ def main(argv=sys.argv):
         [151.766402, -28.141693, 153.831832, -26.855379], # Brisbane - Zoomed Out
         [152.557418, -27.738907, 153.266036, -27.271171], # Brisbance - Zoomed To City
         [152.913787,-27.679941,153.077209,-27.586867],    # Brisbane - Zommed To Suburb
-        [153.051803,-27.611664,153.078582,-27.595387],    # Brisbane - Zoomed To Block
         [153.051803,-27.611664,153.078582,-27.595387],    # Brisbane - Zoomed To A Few Blocks
         [153.077359,-27.597061,153.080556,-27.596623],    # Brisbane - Zoomed To A Block
     ]
