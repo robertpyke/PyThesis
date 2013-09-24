@@ -37,13 +37,8 @@ import geoalchemy2.functions as geo_func
 
 class GriddedMappablePoint(MappablePoint):
 
-    """ The smallest grid size for which clustering is enabled.
-        Below this value, grid size is set to None (no clustering).
-    """
-    MIN_GRID_SIZE_BEFORE_NO_CLUSTERING = 0.015
-
     """ The possible grid sizes that should be used (the normalised grid sizes) """
-    GRID_SIZES = [0, MIN_GRID_SIZE_BEFORE_NO_CLUSTERING, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128]
+    GRID_SIZES = [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128]
 
     """ The grid size is the span of the window divided by GRID_SIZE_WINDOW_FRACTION
         The total number of grids will, on average, be GRID_SIZE_WINDOW_FRACTION^2
@@ -92,9 +87,6 @@ class GriddedMappablePoint(MappablePoint):
 
         grid_size = ( lat_lng_range_avg / float(class_.GRID_SIZE_WINDOW_FRACTION) )
         grid_size = round(grid_size, class_.ROUND_GRID_SIZE_TO_N_PLACES)
-
-        if grid_size < class_.MIN_GRID_SIZE_BEFORE_NO_CLUSTERING:
-            grid_size = 0
 
         return grid_size
 
