@@ -60,7 +60,7 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
         id = Column(Integer, primary_key=True)
 
         # The chached mappable cluster MUST be associated with a cache record
-        cache_record_id = Column(Integer, ForeignKey("cache_records.id"), nullable=False)
+        cache_record_id = Column(Integer, ForeignKey("cache_records.id"), nullable=False, index=True)
         cache_record = relationship("CacheRecord", backref=backref("cached_mappable_point_clusters", order_by=id, enable_typechecks=False))
 
         cluster_size = Column(Integer, nullable=False)
