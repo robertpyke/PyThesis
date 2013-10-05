@@ -148,9 +148,9 @@ class CachedGriddedAndBoundMappablePoint(GriddedAndBoundMappablePoint):
             ).label("centroid"),
             class_.CachedMappablePointCluster.cluster_size.label("cluster_size")
         ).filter(
-            class_.CachedMappablePointCluster.centroid.intersects(ST_MakeEnvelope(*bbox))
-        ).filter(
             class_.CachedMappablePointCluster.cache_record_id == cache_record.id
+        ).filter(
+            class_.CachedMappablePointCluster.centroid.intersects(ST_MakeEnvelope(*bbox))
         )
 
         return q
