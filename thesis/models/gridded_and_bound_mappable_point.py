@@ -64,10 +64,11 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
-        ).filter(
             MappablePoint.layer_id == layer.id
+        ).filter(
+            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
         )
+        
 
         return q
 
@@ -89,9 +90,9 @@ class GriddedAndBoundMappablePoint(GriddedMappablePoint):
         ).group_by(
             ST_SnapToGrid(MappablePoint.location, grid_size)
         ).filter(
-            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
-        ).filter(
             MappablePoint.layer_id == layer.id
+        ).filter(
+            MappablePoint.location.intersects(ST_MakeEnvelope(*bbox))
         )
 
         return q
