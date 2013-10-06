@@ -1,0 +1,6 @@
+Strategy,100_points_worldwide,100k_points_worldwide,10_points_worldwide,10k_points_worldwide,1k_points_worldwide,1m_points_worldwide
+CachedGriddedAndBoundMappablePoint,1.2766199999999999,861.874759,0.22133799999999998,98.474112,10.826464,9456.343068
+GriddedMappablePoint,1.2e-05,1.4999999999999999e-05,1.2e-05,1.4999999999999999e-05,1.3e-05,1.4999999999999999e-05
+BoundMappablePoint,1.2e-05,1.4999999999999999e-05,1.2e-05,1.4e-05,1.3e-05,1.6e-05
+MappablePoint,1.1e-05,1.3e-05,1.3e-05,1.3e-05,1.3e-05,2.6e-05
+GriddedAndBoundMappablePoint,1.3e-05,1.6e-05,1.2e-05,1.4e-05,1.4e-05,1.4e-05
