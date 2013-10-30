@@ -17,7 +17,7 @@ We proposed that for most data sets with up to 1,000,000 data points, using a co
 Method
 -------------
 
-The following describe how to run this code using Vagrant
+The following describes how to run this code using Vagrant
 on a local VM.
 
 1. Install Git
