@@ -20,35 +20,41 @@ Method
 The following describe how to run this code using Vagrant
 on a local VM.
 
-1. Install Virtualbox
+1. Install Git
 
-2. Install Vagrant
+2. Clone this repo locally
 
-3. At a terminal, move to this directory
+        git clone https://github.com/robertpyke/PyThesis.git
 
-4. Create the VM (run from a terminal)
+3. Install Virtualbox
 
-    vagrant up
+4. Install Vagrant
 
-5. SSH into the VM (run from a terminal)
+5. At a terminal, move to this directory
 
-    vagrant ssh
+6. Create the VM (run from a terminal)
 
-6. cd to /vagrant directory
+        vagrant up
 
-    cd /vagrant
+7. SSH into the VM (run from a terminal)
 
-7. Run the test scenario
+        vagrant ssh
 
-    ./bin/test_scenario_one development.ini
+8. cd to /vagrant directory
+
+        cd /vagrant
+
+9. Run the test scenario
+
+        ./bin/test_scenario_one development.ini
 
 
 To change the input data, make sure your input csv files are in the folder:
 
-    thesis/tests/fixtures/
+        thesis/tests/fixtures/
 
 and then update the LAYER_NAMES in the file:
 
-    thesis/scripts/seed_db.py
+        thesis/scripts/seed_db.py
 
 Once that's done, re-run the test_scenario_one script
