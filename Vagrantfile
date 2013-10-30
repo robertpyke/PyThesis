@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "salt/roots/", "/srv/"
 
   config.vm.network :private_network, ip: "192.168.100.100"
-  config.vm.hostname = "visualiser"
+  config.vm.hostname = "thesis"
 
   config.vm.provision :salt do |salt|
     salt.minion_config = "salt/minion"
