@@ -1,0 +1,16 @@
+Strategy,BBOX,100_points_worldwide,100k_points_worldwide,10_points_worldwide,10k_points_worldwide,1k_points_worldwide,1m_points_worldwide
+CachedGriddedAndBoundMappablePoint,"[-180, -90, 180, 90]",84,299,10,298,258,299
+CachedGriddedAndBoundMappablePoint,"[113, -43, 153, -10]",2,330,0,167,18,327
+CachedGriddedAndBoundMappablePoint,"[137.834, -10.7, 153.513336, -28.17]",0,230,0,38,2,287
+GriddedMappablePoint,"[-180, -90, 180, 90]",98,51075,10,9254,992,65341
+GriddedMappablePoint,"[113, -43, 153, -10]",98,51075,10,9254,992,65341
+GriddedMappablePoint,"[137.834, -10.7, 153.513336, -28.17]",98,51075,10,9254,992,65341
+BoundMappablePoint,"[-180, -90, 180, 90]",100,100000,10,10000,1000,1000000
+BoundMappablePoint,"[113, -43, 153, -10]",3,2077,0,225,20,20273
+BoundMappablePoint,"[137.834, -10.7, 153.513336, -28.17]",0,462,0,40,2,4125
+MappablePoint,"[-180, -90, 180, 90]",100,100000,10,10000,1000,1000000
+MappablePoint,"[113, -43, 153, -10]",100,100000,10,10000,1000,1000000
+MappablePoint,"[137.834, -10.7, 153.513336, -28.17]",100,100000,10,10000,1000,1000000
+GriddedAndBoundMappablePoint,"[-180, -90, 180, 90]",59,105,9,105,104,105
+GriddedAndBoundMappablePoint,"[113, -43, 153, -10]",2,119,0,100,17,120
+GriddedAndBoundMappablePoint,"[137.834, -10.7, 153.513336, -28.17]",0,115,0,36,2,129

@@ -1,0 +1,1021 @@
+DEBUG,layers,"['10_points_brisbane', '100_points_brisbane', '1k_points_brisbane', '10k_points_brisbane', '100k_points_brisbane', '1m_points_brisbane']"
+pre_process,MappablePoint,10_points_brisbane,1.3e-05,{},{}
+database_delta_info,MappablePoint,10_points_brisbane,13251704,13251704,0
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.0023929999999999997,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.001452,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.0019399999999999999,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.001328,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.001356,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.001328,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.0015609999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.001326,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.0013679999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.001318,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.00157,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.001328,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.001353,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.001322,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.001823,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.0013189999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.0013629999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.0012959999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.001553,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.00133,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.001359,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.00132,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.0015539999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.00132,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.0013759999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.0013369999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.0018059999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.001354,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,MappablePoint,10_points_brisbane,10,0.001352,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,MappablePoint,10_points_brisbane,10,0.001338,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,MappablePoint,10_points_brisbane,1453,0.001544,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,MappablePoint,10_points_brisbane,439,0.001351,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,BoundMappablePoint,10_points_brisbane,1.2e-05,{},{}
+database_delta_info,BoundMappablePoint,10_points_brisbane,13251704,13251704,0
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,10,0.0021809999999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,10,0.00174,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,1453,0.001973,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,439,0.001758,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,8,0.001995,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,8,0.001632,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,1171,0.0018449999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,355,0.001655,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,9,0.001834,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,9,0.001655,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,1312,0.0018969999999999998,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,397,0.001684,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,10,0.001994,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,10,0.001666,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,1453,0.001949,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,439,0.001774,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,1,0.001581,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,1,0.0015539999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,184,0.0016259999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,61,0.0015689999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,0,0.0018939999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,0,0.001522,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,45,0.001563,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,20,0.0015379999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,0,0.0015559999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,0,0.001526,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,45,0.001566,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,20,0.001535,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,BoundMappablePoint,10_points_brisbane,0,0.001802,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,BoundMappablePoint,10_points_brisbane,0,0.001519,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10_points_brisbane,45,0.001562,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10_points_brisbane,20,0.001549,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedMappablePoint,10_points_brisbane,1.2e-05,{},{}
+database_delta_info,GriddedMappablePoint,10_points_brisbane,13251704,13251704,0
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,1,0.002104,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,1,0.001545,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,185,0.001669,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,61,0.001619,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,3,0.0019679999999999997,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,3,0.0015559999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,466,0.0016699999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,145,0.00157,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,3,0.00162,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,3,0.0015789999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,466,0.001709,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,145,0.001586,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,9,0.001995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,9,0.001673,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,1312,0.0019169999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,397,0.001692,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,10,0.001743,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,10,0.001686,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,1453,0.00196,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,439,0.0017369999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,10,0.002373,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,10,0.001705,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,1453,0.0019429999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,439,0.0017259999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,10,0.001776,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,10,0.001704,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,1453,0.001945,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,439,0.001699,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedMappablePoint,10_points_brisbane,10,0.0019749999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedMappablePoint,10_points_brisbane,10,0.0016849999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10_points_brisbane,1453,0.001941,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10_points_brisbane,439,0.0017,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedAndBoundMappablePoint,10_points_brisbane,1.1e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,10_points_brisbane,13251704,13251704,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,1,0.002133,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,1,0.001856,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,185,0.001957,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,61,0.001861,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,2,0.002325,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,2,0.0018859999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,325,0.0020239999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,103,0.001913,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,3,0.001986,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,3,0.002202,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,466,0.002079,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,145,0.001929,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,9,0.002134,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,9,0.002054,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,1312,0.002277,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,397,0.002313,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,1,0.001888,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,1,0.001838,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,184,0.001936,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,61,0.001834,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,0,0.001818,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,0,0.0020399999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,45,0.0018169999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,20,0.0017879999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,0,0.0018,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,0,0.001769,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,45,0.001823,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,20,0.0020599999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10_points_brisbane,0,0.0017959999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10_points_brisbane,0,0.0017729999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10_points_brisbane,45,0.001831,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10_points_brisbane,20,0.0017859999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0.16616799999999998,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,10_points_brisbane,13276280,13317240,40960
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,2,0.002947,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,2,0.0013549999999999999,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,325,0.0014739999999999998,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,103,0.001374,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,2,0.001401,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,2,0.001736,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,325,0.001465,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,103,0.0013679999999999999,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,4,0.001462,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,4,0.001401,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,606,0.001537,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,186,0.0014039999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,10,0.0015049999999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,10,0.001444,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,1453,0.001682,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,439,0.001748,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,1,0.001395,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,1,0.0013289999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,184,0.0014039999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,61,0.001344,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0,0.0013239999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0,0.001313,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,45,0.0013289999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,20,0.001304,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0,0.0013189999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0,0.0015789999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,45,0.001341,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,20,0.001294,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0,0.0013369999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10_points_brisbane,0,0.0012879999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,45,0.0013319999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10_points_brisbane,20,0.001313,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+pre_process,MappablePoint,100_points_brisbane,1.2e-05,{},{}
+database_delta_info,MappablePoint,100_points_brisbane,13292664,13292664,0
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.002699,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002444,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.0044009999999999995,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.002508,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.002624,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002456,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.0042639999999999996,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.00251,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.002582,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002448,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.004247,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.002541,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.002571,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002434,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.004288,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.00249,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.0026379999999999997,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.00245,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.004279,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.002498,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.0025889999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002464,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.004287,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.002536,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.002583,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002425,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.004481,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.002513,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,MappablePoint,100_points_brisbane,100,0.0026,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,MappablePoint,100_points_brisbane,100,0.002454,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,MappablePoint,100_points_brisbane,14123,0.004319,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,MappablePoint,100_points_brisbane,4199,0.0025009999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,BoundMappablePoint,100_points_brisbane,1.1e-05,{},{}
+database_delta_info,BoundMappablePoint,100_points_brisbane,13309048,13309048,0
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,100,0.003085,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,100,0.0027879999999999997,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,14123,0.0050409999999999995,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,4199,0.002879,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,57,0.002317,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,57,0.002283,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,8066,0.003243,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,2399,0.002301,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,81,0.0029319999999999997,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,81,0.002598,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,11445,0.0039559999999999994,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,3402,0.002678,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,100,0.0029609999999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,100,0.0030529999999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,14123,0.004481,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,4199,0.002889,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,14,0.0018009999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,14,0.001753,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,2013,0.002137,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,603,0.001769,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,0,0.001607,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,0,0.001787,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,45,0.0015919999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,20,0.001532,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,0,0.0015589999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,0,0.001513,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,45,0.001596,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,20,0.001536,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,BoundMappablePoint,100_points_brisbane,0,0.001566,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,BoundMappablePoint,100_points_brisbane,0,0.002049,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100_points_brisbane,45,0.001581,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100_points_brisbane,20,0.001516,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedMappablePoint,100_points_brisbane,1.2e-05,{},{}
+database_delta_info,GriddedMappablePoint,100_points_brisbane,13325432,13325432,0
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,1,0.001942,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,1,0.0017439999999999999,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,186,0.001927,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,61,0.00173,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,4,0.001859,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,4,0.00207,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,606,0.001961,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,184,0.001844,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,4,0.001833,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,4,0.0018419999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,611,0.0019679999999999997,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,187,0.00187,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,60,0.0032159999999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,60,0.002882,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,8496,0.003927,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,2532,0.0029219999999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,95,0.003633,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,95,0.003711,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,13418,0.005124999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,3989,0.003565,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,100,0.0037489999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,100,0.003601,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,14123,0.005534,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,4199,0.0036479999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,100,0.0038339999999999997,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,100,0.003622,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,14123,0.00579,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,4199,0.0036599999999999996,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedMappablePoint,100_points_brisbane,100,0.003754,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedMappablePoint,100_points_brisbane,100,0.003588,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100_points_brisbane,14123,0.005468,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100_points_brisbane,4199,0.003637,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedAndBoundMappablePoint,100_points_brisbane,1.2e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,100_points_brisbane,13341816,13341816,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,1,0.002387,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,1,0.002173,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,186,0.002237,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,61,0.0021609999999999997,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,2,0.0027259999999999997,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,2,0.002043,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,324,0.0021579999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,101,0.002052,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,4,0.002232,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,4,0.002142,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,609,0.00262,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,187,0.0021869999999999997,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,60,0.0034189999999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,60,0.0032459999999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,8496,0.004593,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,2532,0.00333,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,13,0.002183,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,13,0.002128,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,1872,0.002428,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,561,0.0021449999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,0,0.002084,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,0,0.001795,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,45,0.001831,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,20,0.001805,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,0,0.001807,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,0,0.001782,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,45,0.0024,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,20,0.001767,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100_points_brisbane,0,0.0018369999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100_points_brisbane,0,0.001782,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100_points_brisbane,45,0.0018599999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100_points_brisbane,20,0.001771,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0.5974809999999999,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,100_points_brisbane,13358200,13513848,155648
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,2,0.003021,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,2,0.0014889999999999999,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,326,0.0016129999999999999,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,102,0.001495,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,2,0.0014969999999999998,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,2,0.001447,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,324,0.002603,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,101,0.00145,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,4,0.0015379999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,4,0.001516,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,611,0.0016489999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,187,0.001536,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,78,0.002389,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,78,0.020933,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,11029,0.004079,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,3283,0.002346,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,14,0.0015949999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,14,0.0015559999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,2013,0.001982,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,603,0.001828,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0,0.0013629999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0,0.0013679999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,45,0.001615,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,20,0.00131,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0,0.0013449999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0,0.001331,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,45,0.001346,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,20,0.0013269999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0,0.0013629999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100_points_brisbane,0,0.0013139999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,45,0.001362,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100_points_brisbane,20,0.0016099999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+pre_process,MappablePoint,1k_points_brisbane,1.3e-05,{},{}
+database_delta_info,MappablePoint,1k_points_brisbane,13522040,13522040,0
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.016325,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.015286,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.032254,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015356999999999999,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015705,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.015172,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.030706999999999998,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015462,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015702,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.014759,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.052392,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015892,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015957,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.014650999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.031159,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015151999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015536,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.014868999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.030615999999999997,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015304,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015614999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.014721999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.030747,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015488,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015718,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.014764999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.030802999999999997,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015264,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,MappablePoint,1k_points_brisbane,1000,0.015854,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,MappablePoint,1k_points_brisbane,1000,0.014679999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,MappablePoint,1k_points_brisbane,140794,0.030934,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,MappablePoint,1k_points_brisbane,41770,0.015132,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,BoundMappablePoint,1k_points_brisbane,1.4999999999999999e-05,{},{}
+database_delta_info,BoundMappablePoint,1k_points_brisbane,13538424,13538424,0
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,1000,0.01757,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,1000,0.015331,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,140794,0.032206,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,41770,0.015837999999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,592,0.010125,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,592,0.009642999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,83371,0.019468,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,24739,0.009944999999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,859,0.014077,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,859,0.013677,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,120952,0.027083,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,35887,0.013784,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,1000,0.016413999999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,1000,0.015297999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,140794,0.03181,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,41770,0.015785,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,132,0.0036209999999999997,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,132,0.003427,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,18629,0.005723,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,5537,0.00348,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,3,0.001673,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,3,0.0017159999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,466,0.001828,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,145,0.001735,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,0,0.001681,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,0,0.00164,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,45,0.001958,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,20,0.001664,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,BoundMappablePoint,1k_points_brisbane,0,0.0016669999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,BoundMappablePoint,1k_points_brisbane,0,0.001624,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1k_points_brisbane,45,0.001689,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1k_points_brisbane,20,0.0016439999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedMappablePoint,1k_points_brisbane,1.4e-05,{},{}
+database_delta_info,GriddedMappablePoint,1k_points_brisbane,13563000,13563000,0
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,1,0.005207,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,1,0.004454,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,187,0.004572,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,61,0.004441,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,4,0.0044199999999999995,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,4,0.004856,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,611,0.0045309999999999994,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,185,0.004586,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,4,0.004523999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,4,0.0044989999999999995,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,612,0.004607,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,185,0.004482,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,112,0.00739,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,112,0.0068579999999999995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,15856,0.008973,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,4689,0.0069039999999999995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,572,0.016652,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,572,0.015698,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,80576,0.025991999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,23924,0.016007999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,961,0.02413,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,961,0.022838999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,135304,0.038987999999999995,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,40141,0.023621,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,997,0.024777,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,997,0.023569,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,140372,0.040160999999999995,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,41645,0.024031999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedMappablePoint,1k_points_brisbane,1000,0.046362999999999994,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedMappablePoint,1k_points_brisbane,1000,0.024489,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1k_points_brisbane,140794,0.041006,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1k_points_brisbane,41770,0.024208999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedAndBoundMappablePoint,1k_points_brisbane,1.4e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,1k_points_brisbane,13579384,13579384,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,1,0.006026,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,1,0.005189,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,187,0.005273,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,61,0.005196999999999999,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,2,0.00435,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,2,0.0038529999999999997,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,327,0.004066,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,102,0.003981,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,4,0.004771,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,4,0.004761,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,613,0.005203,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,187,0.004801,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,112,0.007803999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,112,0.007486,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,15856,0.010336,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,4689,0.00762,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,74,0.003964,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,74,0.0038239999999999997,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,10463,0.005294999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,3113,0.0038429999999999996,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,3,0.002067,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,3,0.0020239999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,466,0.002178,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,145,0.002038,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,0,0.0022099999999999997,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,0,0.0019,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,45,0.001941,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,20,0.0019019999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1k_points_brisbane,0,0.0019329999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1k_points_brisbane,0,0.001908,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1k_points_brisbane,45,0.002234,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1k_points_brisbane,20,0.0018989999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,3.6579509999999997,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,13595768,14242936,647168
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,2,0.004373,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,2,0.0024,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,328,0.002528,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,102,0.002415,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,2,0.002026,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,2,0.001996,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,327,0.003978,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,102,0.002,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,4,0.002381,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,4,0.002339,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,614,0.003132,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,186,0.002881,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,192,0.005769,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,192,0.005051,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,27081,0.012535,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,8036,0.006816999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,115,0.004229999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,115,0.002913,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,16238,0.005045,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,4829,0.002901,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,3,0.001472,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,3,0.001405,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,466,0.001606,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,145,0.0014169999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,0,0.0013549999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,0,0.001312,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,45,0.001403,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,20,0.00133,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,0,0.0016849999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,0,0.0013189999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,45,0.0014039999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1k_points_brisbane,20,0.0013139999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+pre_process,MappablePoint,10k_points_brisbane,1.4e-05,{},{}
+database_delta_info,MappablePoint,10k_points_brisbane,14898296,14898296,0
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.256205,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.17410499999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.36601999999999996,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.177697,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.201092,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.173194,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.369718,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.178733,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.205193,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.17366199999999998,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.36360899999999996,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.177586,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.199653,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.17296499999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.362662,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.17773699999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.205142,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.173488,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.358284,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.200925,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.183174,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.17189,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.359062,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.20007999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.18229399999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.173432,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.3588,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.198758,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,MappablePoint,10k_points_brisbane,10000,0.18267699999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,MappablePoint,10k_points_brisbane,10000,0.171865,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,MappablePoint,10k_points_brisbane,1407837,0.357082,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,MappablePoint,10k_points_brisbane,417813,0.19708799999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,BoundMappablePoint,10k_points_brisbane,1.4e-05,{},{}
+database_delta_info,BoundMappablePoint,10k_points_brisbane,14729732,14729732,0
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,10000,0.199398,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,10000,0.22622299999999998,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,1407837,0.38641,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,417813,0.185049,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,6086,0.097866,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,6086,0.09056299999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,856788,0.226773,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,254250,0.09597299999999999,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,8517,0.184804,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,8517,0.15645,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,1199046,0.334794,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,355839,0.158299,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,10000,0.185719,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,10000,0.19708599999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,1407837,0.380803,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,417813,0.18414799999999998,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,1252,0.020676999999999997,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,1252,0.019129999999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,176291,0.039427,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,52319,0.019691,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,69,0.002614,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,69,0.0025269999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,9754,0.0036869999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,2899,0.002583,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,1,0.001656,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,1,0.0016079999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,184,0.001691,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,61,0.001854,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,BoundMappablePoint,10k_points_brisbane,0,0.0015719999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,BoundMappablePoint,10k_points_brisbane,0,0.001537,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,BoundMappablePoint,10k_points_brisbane,45,0.001584,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,BoundMappablePoint,10k_points_brisbane,20,0.001544,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedMappablePoint,10k_points_brisbane,1.4999999999999999e-05,{},{}
+database_delta_info,GriddedMappablePoint,10k_points_brisbane,14729732,14729732,0
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,1,0.041484,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,1,0.039813,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,188,0.038983,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,61,0.038808999999999996,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,4,0.054487999999999995,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,4,0.057616,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,615,0.052957,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,185,0.053094999999999996,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,4,0.054639999999999994,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,4,0.055893,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,616,0.056151,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,185,0.055742,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,119,0.060433999999999995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,119,0.059164999999999995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,16981,0.064839,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,4999,0.058855,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,825,0.07384199999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,825,0.07221,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,116806,0.09177099999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,34493,0.073326,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,7431,0.208315,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,7431,0.199077,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,1046180,0.37945199999999996,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,310487,0.202454,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,9932,0.27683399999999997,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,9932,0.244553,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,1398263,0.44148699999999996,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,414971,0.249737,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedMappablePoint,10k_points_brisbane,10000,0.286962,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedMappablePoint,10k_points_brisbane,10000,0.254665,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,10k_points_brisbane,1407837,0.45138399999999995,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,10k_points_brisbane,417813,0.259635,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedAndBoundMappablePoint,10k_points_brisbane,1.4999999999999999e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,10k_points_brisbane,14729732,14729732,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,1,0.048428,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,1,0.045273999999999995,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,188,0.044667,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,61,0.044496,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,2,0.035198,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,2,0.031744999999999995,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,328,0.031523999999999996,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,101,0.031731999999999996,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,4,0.052474,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,4,0.053878999999999996,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,616,0.051907999999999996,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,186,0.053591,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,119,0.064396,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,119,0.063125,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,16984,0.066851,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,5002,0.063201,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,114,0.009047999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,114,0.008789,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,16159,0.013548999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,4778,0.008820999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,53,0.0034089999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,53,0.003243,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,7502,0.0044789999999999995,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,2231,0.003289,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,1,0.002042,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,1,0.0019979999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,184,0.00209,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,61,0.002021,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,10k_points_brisbane,0,0.002244,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,10k_points_brisbane,0,0.001892,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,10k_points_brisbane,45,0.001963,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,10k_points_brisbane,20,0.001914,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,21.824144,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,14729732,17998340,3268608
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,2,0.013039,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,2,0.009937,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,331,0.008801,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,103,0.008591,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,2,0.006156,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,2,0.006095,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,329,0.0126,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,102,0.0060739999999999995,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,4,0.007847,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,4,0.007744999999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,618,0.007871,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,186,0.007761,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,198,0.011479999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,198,0.010837999999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,28112,0.01461,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,8296,0.010935,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,337,0.007045,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,337,0.010948999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,47487,0.012582999999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,14098,0.006777,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,69,0.002451,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,69,0.0023469999999999997,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,9754,0.003584,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,2899,0.002399,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,1,0.0014449999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,1,0.001413,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,184,0.0015769999999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,61,0.0014169999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,0,0.00148,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,0,0.001767,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,45,0.001475,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,10k_points_brisbane,20,0.001444,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+pre_process,MappablePoint,100k_points_brisbane,1.4999999999999999e-05,{},{}
+database_delta_info,MappablePoint,100k_points_brisbane,26473592,26473592,0
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,2.498968,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,2.059165,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,4.184129,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,2.019745,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,2.085289,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,1.943194,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,4.273528,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,2.058041,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,2.04494,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,1.91873,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,4.143703,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,2.05309,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,2.265829,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,2.964702,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,6.057883,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,2.9666829999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,3.111381,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,2.881837,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,6.296146,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,3.015116,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,3.002913,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,2.92449,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,6.047068,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,3.008686,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,3.064192,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,2.88317,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,6.159327,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,2.881278,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,MappablePoint,100k_points_brisbane,100000,2.673448,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,MappablePoint,100k_points_brisbane,100000,1.9483929999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,MappablePoint,100k_points_brisbane,14077916,4.065692,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,MappablePoint,100k_points_brisbane,4177892,2.058031,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,BoundMappablePoint,100k_points_brisbane,1.4e-05,{},{}
+database_delta_info,BoundMappablePoint,100k_points_brisbane,26473592,26473592,0
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,100000,2.468461,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,100000,2.049435,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,14077916,4.241513,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,4177892,2.047765,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,59925,1.204301,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,59925,1.188916,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,8436050,2.452639,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,2503451,1.20773,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,84624,1.747144,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,84624,1.7287460000000001,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,11913233,3.548756,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,3535433,1.748307,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,100000,2.11191,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,100000,1.984948,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,14077916,4.119482,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,4177892,2.087354,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,12596,0.226703,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,12596,0.237562,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,1773275,0.46967899999999996,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,526247,0.22078599999999998,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,560,0.0109,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,560,0.009696,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,78878,0.018767,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,23414,0.010738,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,16,0.00187,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,16,0.0018239999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,2297,0.00214,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,689,0.001844,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,BoundMappablePoint,100k_points_brisbane,0,0.0016099999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,BoundMappablePoint,100k_points_brisbane,0,0.001562,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,BoundMappablePoint,100k_points_brisbane,45,0.0016099999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,BoundMappablePoint,100k_points_brisbane,20,0.0018039999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedMappablePoint,100k_points_brisbane,1.4999999999999999e-05,{},{}
+database_delta_info,GriddedMappablePoint,100k_points_brisbane,26465400,26465400,0
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,1,0.396682,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,1,0.387884,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,189,0.397113,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,61,0.391182,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,4,0.617714,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,4,0.641268,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,620,0.61625,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,186,0.616001,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,4,0.6168549999999999,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,4,0.611632,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,622,0.612769,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,186,0.613617,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,126,0.694649,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,126,0.668793,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,18094,0.672905,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,5284,0.6666829999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,828,0.686132,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,828,0.6845249999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,118173,0.701147,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,34619,0.687417,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,15891,1.011868,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,15891,0.9899509999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,2238852,1.3390849999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,663882,1.028532,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,92861,2.9358969999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,92861,2.571875,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,13072895,4.658311,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,3879632,2.638144,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedMappablePoint,100k_points_brisbane,100000,2.953857,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedMappablePoint,100k_points_brisbane,100000,2.968048,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,100k_points_brisbane,14077916,5.123185,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,100k_points_brisbane,4177892,3.005785,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedAndBoundMappablePoint,100k_points_brisbane,1.6e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,100k_points_brisbane,26465400,26465400,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,1,0.594309,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,1,0.48256699999999997,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,187,0.49292899999999995,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,59,0.48073,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,2,0.395132,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,2,0.371561,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,332,0.371285,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,103,0.37188899999999997,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,4,0.557898,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,4,0.55904,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,621,0.555674,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,187,0.578804,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,126,0.7227469999999999,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,126,0.72492,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,18087,0.725232,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,5277,0.720734,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,117,0.08634599999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,117,0.08390099999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,16715,0.086175,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,4911,0.083923,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,103,0.006379,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,103,0.030237999999999998,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,14548,0.009328999999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,4322,0.00639,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,16,0.002323,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,16,0.002283,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,2297,0.0026379999999999997,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,689,0.002588,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,100k_points_brisbane,0,0.00188,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,100k_points_brisbane,0,0.0018809999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,100k_points_brisbane,45,0.001896,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,100k_points_brisbane,20,0.0018809999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,136.822716,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,26465400,46552184,20086784
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,2,0.08191,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,2,0.052693,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,332,0.051720999999999996,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,102,0.051240999999999995,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,2,0.032771,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,2,0.032608,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,332,0.041969,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,103,0.032539,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,4,0.045445,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,4,0.044336,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,623,0.044251,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,187,0.044354,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,198,0.056575999999999994,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,198,0.054681,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,28305,0.057946,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,8294,0.054626999999999995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,345,0.013795,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,345,0.013141,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,48962,0.027707,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,14438,0.013852,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,560,0.009068,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,560,0.008418,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,78878,0.018532,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,23414,0.008872,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,16,0.0017289999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,16,0.001678,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,2297,0.001992,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,689,0.0017029999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,0,0.001389,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,0,0.0013629999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,45,0.001411,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,100k_points_brisbane,20,0.001357,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+pre_process,MappablePoint,1m_points_brisbane,1.4e-05,{},{}
+database_delta_info,MappablePoint,1m_points_brisbane,141558276,141558276,0
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,28.234423,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.226038,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,43.709213,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,23.203338,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,22.8584,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.286917,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,43.602512,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,22.897489,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,22.936712,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.250516,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,43.826859999999996,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,23.074878,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,23.150166,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.197909,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,44.11482,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,23.074568,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,23.384697,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.181478,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,44.325954,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,22.755131,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,23.773977,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.022119,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,43.579026999999996,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,22.717418,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,23.367194,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.25629,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,44.020576,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,22.96102,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,MappablePoint,1m_points_brisbane,999999,23.15478,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,MappablePoint,1m_points_brisbane,999999,22.207631,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,MappablePoint,1m_points_brisbane,140777312,44.036255,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,MappablePoint,1m_points_brisbane,41777387,23.279249,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,BoundMappablePoint,1m_points_brisbane,1.9999999999999998e-05,{},{}
+database_delta_info,BoundMappablePoint,1m_points_brisbane,141702264,141702264,0
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,999999,32.144469,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,999999,22.915761,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,140777312,45.026023,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,41777387,23.387354,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,597389,14.513819,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,597389,14.006322,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,84098271,27.987956,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,24956736,14.07094,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,846485,20.09936,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,846485,19.531627,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,119165674,38.079638,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,35363635,19.604922,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,999999,23.88842,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,999999,22.739167,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,140777312,45.51683,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,41777387,22.933592,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,125386,2.746717,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,125386,2.657728,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,17651586,5.578197,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,5238348,2.75085,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,5791,0.127629,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,5791,0.122845,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,815263,0.221992,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,241930,0.126102,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,162,0.005265,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,162,0.004157,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,22847,0.006999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,6785,0.0042639999999999996,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,BoundMappablePoint,1m_points_brisbane,1,0.001846,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,BoundMappablePoint,1m_points_brisbane,1,0.0017929999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,BoundMappablePoint,1m_points_brisbane,184,0.001874,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,BoundMappablePoint,1m_points_brisbane,61,0.001811,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedMappablePoint,1m_points_brisbane,1.8999999999999998e-05,{},{}
+database_delta_info,GriddedMappablePoint,1m_points_brisbane,141710456,141710456,0
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,1,4.163818,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,1,4.002968,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,190,4.090516,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,61,3.935343,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,4,7.564504,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,4,8.061413,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,624,7.460015,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,186,7.466939,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,4,7.650344,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,4,7.650389,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,625,7.653103,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,185,7.667964,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,126,7.782323,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,126,7.7927219999999995,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,18230,7.880932,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,5290,7.911757,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,828,7.850035,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,828,7.980161,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,119012,7.853629,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,34627,7.864513,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,16000,8.318961,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,16000,8.346668,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,2268382,11.730099,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,668413,8.325988,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,517310,19.999602,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,517310,22.958455999999998,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,72825715,31.027634,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,21611997,19.683249,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedMappablePoint,1m_points_brisbane,999999,32.553555,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedMappablePoint,1m_points_brisbane,999999,31.715482,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedMappablePoint,1m_points_brisbane,140777312,53.986849,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedMappablePoint,1m_points_brisbane,41777387,32.206054,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,GriddedAndBoundMappablePoint,1m_points_brisbane,1.4999999999999999e-05,{},{}
+database_delta_info,GriddedAndBoundMappablePoint,1m_points_brisbane,141726840,141726840,0
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,1,4.35947,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,1,4.230312,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,190,4.485728,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,61,5.183991,"{'bbox': [-180, -90, 180, 90]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,4,5.187873,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,4,4.266099,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,616,4.05747,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,186,4.010628,"{'bbox': [113, -43, 153, -10]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,4,6.562551,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,4,6.784501,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,625,6.822424,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,187,6.844679,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,126,8.403894,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,126,8.409962,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,18230,8.61324,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,5290,8.427179,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,117,0.9670989999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,117,0.970483,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,16828,0.969258,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,4905,0.973159,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,104,0.06376899999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,104,0.063707,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,14787,0.065621,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,4363,0.06344899999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,94,0.005625,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,94,0.00498,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,13271,0.006666,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,3941,0.004719999999999999,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}",{}
+get_points_as_geojson,GriddedAndBoundMappablePoint,1m_points_brisbane,1,0.002156,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt,GriddedAndBoundMappablePoint,1m_points_brisbane,1,0.002131,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_geojson_str,GriddedAndBoundMappablePoint,1m_points_brisbane,184,0.00224,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+get_points_as_wkt_str,GriddedAndBoundMappablePoint,1m_points_brisbane,61,0.0024619999999999998,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}",{}
+pre_process,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,1735.596894,{},"{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+database_delta_info,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,141735032,318887032,177152000
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,2,0.523667,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,2,0.453528,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,334,0.416417,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,102,0.412784,"{'bbox': [-180, -90, 180, 90]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,2,0.28582599999999997,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,2,0.289545,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,333,1.102359,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,102,0.289586,"{'bbox': [113, -43, 153, -10]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,4,0.36993499999999996,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,4,0.369544,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,624,0.370168,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,184,0.36838099999999996,"{'bbox': [137.834, -10.7, 153.513336, -28.17]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,198,0.451399,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,198,0.45436899999999997,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,28500,0.53694,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,8291,0.411167,"{'bbox': [151.766402, -28.141693, 153.831832, -26.855379]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,345,0.08982,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,345,0.08935599999999999,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,49311,1.017956,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,14442,0.090513,"{'bbox': [152.557418, -27.738907, 153.266036, -27.271171]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,5791,0.08121099999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,5791,0.07342,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,815263,0.197023,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,241930,0.07890599999999999,"{'bbox': [152.913787, -27.679941, 153.077209, -27.586867]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,162,0.004576,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,162,0.0038889999999999997,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,22847,0.007148,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,6785,0.004012,"{'bbox': [153.051803, -27.611664, 153.078582, -27.595387]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,1,0.0014629999999999999,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,1,0.00146,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_geojson_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,184,0.00153,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
+get_points_as_wkt_str,CachedGriddedAndBoundMappablePoint,1m_points_brisbane,61,0.00147,"{'bbox': [153.077359, -27.597061, 153.080556, -27.596623]}","{'grid_sizes': [0, 0.015, 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128], 'grid_sizes_length': 15}"
